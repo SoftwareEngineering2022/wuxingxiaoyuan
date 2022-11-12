@@ -1,0 +1,5 @@
+<!--pages/text/-text.wxml-->
+<view>
+    <text user-select="true"> 139000000</text>
+</view>
+<rich-text nodes="<h1 style='color:red;'>标题</h1>">  </rich-text>

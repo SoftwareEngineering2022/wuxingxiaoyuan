@@ -1,0 +1,12 @@
+<!--pages/home1/home1.wxml
+<text class="text1">pages/home1/home1.wxml</text>
+<view></view>
+<my-test1 max="9"></my-test1>-->
+<!--
+<my-test2></my-test2>-->
+<!--<my-test3></my-test3>-->
+
+<my-test4 count="{{count}}" bind:add="method" class="customA" id="#cA"> </my-test4>
+<view>________________________</view>
+<view>在home1中count的值是{{count}}</view>
+<button bindtap="getchild">父子组件通信按钮</button>

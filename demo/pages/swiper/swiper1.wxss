@@ -1,0 +1,20 @@
+/* pages/swiper/swiper1.wxss */
+.swiper-contain{
+  height: 150px;
+}
+
+.item{
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+
+swiper-item:nth-child(1) .item{
+  background-color: lightpink;
+}
+swiper-item:nth-child(2) .item{
+  background-color: rgb(99, 228, 137);
+}
+swiper-item:nth-child(3) .item{
+  background-color: rgb(170, 143, 201);
+}

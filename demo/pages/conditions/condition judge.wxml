@@ -1,0 +1,26 @@
+<!--pages/conditions/condition judge.wxml-->
+<!--条件渲染-->
+<view wx:if="{{type===1}}">男</view>
+<view wx:elif="{{type===2}}">女</view>
+<view wx:else>你猜</view>
+<block wx:if="{{true}}">
+  <view>guess</view>
+  <view>Yes</view>
+</block>
+
+<view hidden="{{flag}}">如果值为true则显示，否则隐藏</view>
+
+<!--列表渲染-->
+<view wx:for="{{arr1}}" wx:key="index">
+   索引是{{index}}，具体内容是{{item}}
+</view>
+
+<view wx:for="{{arr1}}" wx:for-index="idx" wx:for-item="itemName" wx:key="index">
+   索引是{{idx}}，具体内容是{{itemName}}
+</view>
+<view>----------------</view>
+<view wx:for="{{ArryList}}" wx:key="id">
+{{item.name}}
+</view>
+<button bindtap="btnget">发起GET请求</button>
+<button bindtap="btnpost">发起POST请求</button>

@@ -1,0 +1,6 @@
+<!--components/test4/test4.wxml-->
+<slot name="first"></slot>
+<text>内部站点,还有传过来的count值是：{{count}}</text>
+<button type="primary" bindtap="addcount">count+1</button>
+<slot name="second"></slot>
+<view>在behavior中的用户名是:{{username}}</view>

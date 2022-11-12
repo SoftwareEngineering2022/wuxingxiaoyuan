@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/message/message",
+    "pages/contact/contact",
+    "pages/conditions/condition judge",
+    "pages/data.study/data.study",
+    "pages/index/index",
+    "pages/button+image/button+image",
+    "pages/text/-text",
+    "pages/swiper/swiper1",
+    "pages/list/list",
+    "pages/logs/logs",
+    "pages/logs/list",
+    "pages/page1/no1",
+    "pages/shoplist/shoplist",
+    "pages/home1/home1"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#4a4b7b",
+    "navigationBarTitleText": "本地生活",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#efefef"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home1/home1",
+        "text": "首页",
+        "iconPath": "/image/zhanghu.png",
+        "selectedIconPath": "/image/账户-a.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "/image/dianhua.png",
+        "selectedIconPath": "/image/dianhua-a.png"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "text": "联系我们",
+        "iconPath": "/image/gengduo.png",
+        "selectedIconPath": "/image/gengduo-a.png"
+      }
+    ]
+    
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+  
+}
