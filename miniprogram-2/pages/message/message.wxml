@@ -1,2 +1,4 @@
-<!--pages/message/message.wxml-->
-<text>pages/message/message.wxml</text>
+<button type="primary" bindtap="clickBtn">上传文件</button>
+<image wx:for="{{urlArr}}" wx:key="index" src="{{item}}"></image>
+-------------------------------------------------
+<button type="primary" bindtap="subBtn">提交</button>

@@ -21,6 +21,11 @@ Page({
   onReady() {
 
   },
+  btnclick(){
+    wx:wx.navigateTo({
+      url: '/pages/goodDetail/goodDetail',
+    })
+  },
 
   /**
    * 生命周期函数--监听页面显示

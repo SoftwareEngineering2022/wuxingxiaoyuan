@@ -1,2 +1,3 @@
 <!--pages/buy/buy.wxml-->
-<text>pages/buy/buy.wxml</text>
+<button bindtap="btnclick">跳转到商品详情页
+</button>

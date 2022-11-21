@@ -1,2 +1,3 @@
 <!--pages/budget/budgt.wxml-->
-<text>pages/budget/budgt.wxml</text>
+<button bindtap="addImg" type="primary">上传图片</button>
+<image wx:for="{{urlArr}}" wx:key="index" src="{{item}}"></image>

@@ -6,7 +6,9 @@
     "pages/budget/budgt",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/buy/buy"
+    "pages/buy/buy",
+    "pages/goodDetail/goodDetail",
+    "pages/donation/donation"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -19,26 +21,26 @@
       {
         "pagePath": "pages/home/home",
         "text": "首页",
-        "iconPath": "/img/家.1.png",
-        "selectedIconPath": "/img/家.2.png"
+        "iconPath": "/tabBarIMG/家.1.png",
+        "selectedIconPath": "/tabBarIMG/家.2.png"
       },
       {
         "pagePath": "pages/message/message",
         "text": "消息",
-        "iconPath": "/img/社区.1.png",
-        "selectedIconPath": "/img/社区.2.png"
+        "iconPath": "/tabBarIMG/社区.1.png",
+        "selectedIconPath": "/tabBarIMG/社区.2.png"
       },
       {
         "pagePath": "pages/budget/budgt",
-        "text": "购物车",
-        "iconPath": "/img/购物车.1.png",
-        "selectedIconPath": "/img/购物车.2.png"
+        "text": "收藏夹",
+        "iconPath": "/tabBarIMG/购物车.1.png",
+        "selectedIconPath": "/tabBarIMG/购物车.2.png"
       },
       {
         "pagePath": "pages/personity/personity",
         "text": "个人中心",
-        "iconPath": "/img/云社区.1.png",
-        "selectedIconPath": "/img/云社区.2.png"
+        "iconPath": "/tabBarIMG/云社区.1.png",
+        "selectedIconPath": "/tabBarIMG/云社区.2.png"
       }
     ]
   },
