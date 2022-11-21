@@ -1,4 +1,4 @@
-// pages/home/home.js
+// pages/donation/donation.js
 Page({
 
   /**
@@ -13,16 +13,6 @@ Page({
    */
   onLoad(options) {
 
-  },
-  changeweb1(){
-   wx:wx.navigateTo({
-     url: '/pages/goodDetail/goodDetail',
-   }) 
-  },
-  changeweb3(){
-    wx:wx.navigateTo({
-      url: '/pages/donation/donation',
-    }) 
   },
 
   /**

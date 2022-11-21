@@ -1,11 +1,41 @@
 // pages/budget/budgt.js
+var urlArr=[];
+var filePath=[]; //要学会防止重复定义
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+     
+  },
+  addImg(){
+     wx.chooseImage({
+       success:res=>{
+         filePath=res.tempFilePaths
+         filePath.forEach((item,idx)=>{
+           var fileName="Homebutton"+idx
+           this.cloudfile(fileName,item)
+        })
+         
+       }
+     })
+  },
 
+  cloudfile(fileName,path){
+    wx.cloud.uploadFile({
+      cloudPath:fileName,
+      filePath:path
+    }).then(res=>{
+      urlArr.push(res.fileID)
+      console.log(urlArr)
+      if(filePath.length==urlArr.length){
+        this.setData({
+          urlArr:urlArr
+        })
+      }
+    })
   },
 
   /**
