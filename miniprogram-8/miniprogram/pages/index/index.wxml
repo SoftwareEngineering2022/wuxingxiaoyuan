@@ -1,0 +1,44 @@
+<!-- 搜索框 -->
+<view class="search">
+  <input placeholder="搜索" bindconfirm="search" confirm-type="done"></input>
+  <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/goods-img/MBE风格常用图标-搜索.png" style="width:55rpx;height: 55rpx;" ></image>
+</view>
+<!-- 搜索列表 -->
+<view class="list" wx:for="{{search}}" wx:key="_id">
+  <navigator class="list_1" url="../product_detail/product_detail?id={{item._id}}">
+    <image src="{{item.image}}" style="width:100rpx;height:100rpx;margin-left: 10rpx;"></image>
+    <view>商品：{{item.name}}</view>
+    <view style="margin-right: 50rpx;">价格：{{item.price}}</view>
+  </navigator>
+  <view class="line"></view>
+</view>
+<!-- 轮播图 -->
+<view class="banner">
+  <swiper class="banner_1" style="width: 700rpx;height: 300rpx;" autoplay="true" circular="true" interval="5000" indicator-dots="true">
+   <swiper-item wx:for="{{banner}}">
+      <image class="poster" src="{{item.src}}"></image>
+   </swiper-item>
+  </swiper>
+</view>
+<!-- 分类模块 -->
+<view class="fenlei" >
+  <view class="fenlei_1" wx:for="{{fenlei}}" wx:key="_id">
+    <navigator url="../fenlei/fenlei?name={{item.name}}" class="fenlei_2">
+      <image src="{{item.src}}" style="width:80rpx;height:80rpx"></image>
+      <text style="align-self: center;">{{item.name}}</text>
+    </navigator>
+  </view>
+</view>
+<!-- 产品列表 -->
+<view class="product">
+<view class="line"></view>
+  <block wx:for="{{product}}" wx:key="_id">
+  <navigator class="product_1" url="../product_detail/product_detail?id={{item._id}}">
+    <image src="{{item.image}}" class="img"></image>
+    <view class="product_2">
+      <text style="font-size:15px;">{{item.name}}：￥{{item.price}}</text>
+      <text style="font-size:15px;font-weight: 200;">{{item.owner}}</text>
+    </view>
+  </navigator>
+  </block>
+</view>
