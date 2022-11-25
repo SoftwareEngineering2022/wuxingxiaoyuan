@@ -1,4 +1,0 @@
-/* pages/button+image/button+image.wxss */
-image{
-  border: 1px solid lightseagreen;
-}

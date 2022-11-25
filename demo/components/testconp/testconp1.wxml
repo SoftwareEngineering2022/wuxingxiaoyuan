@@ -1,6 +1,0 @@
-<!--components/testconp/testconp1.wxml-->
-<text class="text1">components/testconp/testconp1.wxml</text>
-<view>count的值是：{{count}}</view>
-<button type="primary" bindtap="addcount">+1</button>
-<view>max的值是：{{max}}</view>
-<button bindtap="showinfo">showinfo</button>

@@ -1,6 +1,0 @@
-<!--pages/list/list.wxml-->
-<scroll-view class="container1" scroll-y="true">
-   <view>A</view>
-   <view>B</view>
-   <view>C</view>
-</scroll-view>
