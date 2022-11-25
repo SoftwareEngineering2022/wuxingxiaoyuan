@@ -1,0 +1,51 @@
+<view class="title">
+  <view class="login">
+    <!-- <image src="{{userinfo.avatarUrl}}"></image> -->
+    <view wx:if="{{headImg!=''}}">
+      <view class="filter"><image src="{{headImg}}" style="filter: blur(30px);"></image></view><!--模糊背景-->
+      <view class="img">
+        <image src="{{headImg}}"></image>
+        <view>{{userName}}</view>
+      </view>
+    </view>
+    <view wx:else class="loginButton">
+      <button class="admin" style="display:{{adminDisplay}}" type="primary" bindtap="getUserProfile">登录</button>
+      <!--获取用户信息-->
+    </view>
+  </view>
+</view>
+
+<!-- 下方表格 -->
+<view class="bottom">
+    <view class="bottom-content">
+        
+        <navigator url="../account/account"><view class="me-about">
+            <text>个人账户</text>
+            <image src="../../images/common/next.png"></image>
+        </view></navigator>
+
+        <navigator url="myPublish/myPublish"><view class="me-about">
+            <text>我的发布</text>
+            <image src="../../images/common/next.png"></image>
+        </view></navigator>
+
+        <navigator url="myList/myList"><view class="me-about">
+            <text>我的购买</text>
+            <image src="../../images/common/next.png"></image>
+        </view></navigator>
+
+        <navigator url="myList/myList"><view class="me-about">
+            <text>我的置换</text>
+            <image src="../../images/common/next.png"></image>
+        </view></navigator>
+
+        <view class="me-about">
+            <button open-type="contact" bindcontact="handleContact">联系客服</button>
+            <image src="../../images/common/next.png"></image>
+        </view>
+        <navigator url="../concerning/concerning"><view class="me-about">
+            <text>关于平台</text>
+            <image src="../../images/common/next.png"></image>
+        </view></navigator>
+    </view>
+  </view>

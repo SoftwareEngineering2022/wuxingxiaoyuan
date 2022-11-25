@@ -1,0 +1,54 @@
+/* 上方登录部分的css */
+.title .login{
+  text-align: center;
+}
+
+.title .admin{
+  color: #fff;
+}
+.title .login .img{
+  position: absolute;
+  top: 100rpx;
+  left: 250rpx;
+
+}
+.title .login .img image{
+  height: 250rpx;
+  width: 250rpx;
+  border-radius: 50%;
+}
+.loginButton{
+  margin-top: 50rpx;
+}
+/* 下方部分的css */
+.bottom{
+  margin-top: 50rpx;
+}
+.bottom-content{
+  width: 95%; 
+  border-radius: 5%;
+  margin: auto;
+  background-color: rgb(253, 253, 253);
+  padding-bottom: 35rpx;
+  box-shadow: 5rpx 5rpx 10rpx 5rpx #e1e1e1;
+}
+.me-about{
+  display: flex;
+  margin: 20rpx 40rpx;
+  padding: 30rpx 0rpx;
+  justify-content: space-between;
+  border-bottom: 2rpx solid rgb(238, 238, 238);
+}
+.me-about image{
+  align-self: center;
+  width: 35rpx;
+  height: 35rpx;
+}
+.bottom .me-about button{
+  position: relative;
+  left: -48rpx;
+  font-weight: normal;
+  font-size: 32rpx;
+  width: 600rpx;
+  text-align: left;
+}

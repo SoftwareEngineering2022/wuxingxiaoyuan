@@ -1,0 +1,59 @@
+<!--pages/donation/donation.wxml-->
+
+<!-- 轮播图的代码 -->
+<swiper class="swiper-photo" circular indicator-dots autoplay interval="3000" indicator-color="white" indicator-active-color="gray">
+<swiper-item><image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/donationImg/NO.1.jpg">
+</image></swiper-item>,
+<swiper-item><image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/donationImg/NO.2.jpg">
+</image></swiper-item>,
+</swiper>
+
+<!-- 五个小图标的代码 -->
+<view class="allbtn">
+<view class="btnItem">
+  <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/donationImg/yiwu.png"></image>
+  <text>衣物</text>
+  </view>
+  <view class="btnItem">
+  <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/donationImg/xiezi.png"></image>
+  <text>鞋子</text>
+  </view>
+  <view class="btnItem">
+  <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/donationImg/huabankaobei.png"></image>
+  <text>帽子</text>
+  </view>
+  <view class="btnItem">
+  <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/donationImg/包包.png"></image>
+  <text>旧包</text>
+  </view>
+  <view class="btnItem">
+  <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/donationImg/wanjuxiong.png"></image>
+  <text>玩具</text>
+  </view>
+</view>
+
+<!-- 大按钮的代码 -->
+<view class="bigbtn">
+<image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/donationImg/btn.jpg"></image>
+</view>
+
+<view class="imp">
+<text >热门活动</text>
+</view>
+
+
+<!-- 热门活动的四个图标 -->
+<view class="allbtn2">
+<view class="btnItem2">
+  <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/donationImg/IMG_1.jpg"></image>
+  </view>
+  <view class="btnItem2">
+  <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/donationImg/IMG_2.jpg"></image>
+  </view>
+  <view class="btnItem2">
+  <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/donationImg/IMG_3.jpg"></image>
+  </view>
+  <view class="btnItem2">
+  <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/donationImg/IMG_4.jpg"></image>
+  </view>
+</view>
