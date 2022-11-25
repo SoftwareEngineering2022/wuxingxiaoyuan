@@ -1,8 +1,0 @@
-/* pages/personity/personity.wxss */
-.Testview{
-  padding: 100rpx 30rpx;
-  border-bottom: 1px solid #ccc;
-}
-.title{
-  font-size: 40rpx;
-}
