@@ -1,0 +1,95 @@
+/* pages/donationdetail/donationdetail.wxss *//* pages/donationdetail/donationdetail.wxss */
+/* 背景图的格式 */
+.background{
+  height: 240px;
+}
+.background image{
+  height: 240px;
+  width: 390px;
+}
+
+.imp{
+  margin-top: 15rpx;
+}
+.imp text{
+  font-size: 45rpx;
+  color: #87c38f;
+}
+
+/* 五个小图标的格式 */
+.allbtn{
+  padding-top: 15rpx;
+  display: flex;
+  
+}
+.btnItem{
+  width: 150rpx;
+  display: flex;
+  align-items:center;
+  flex-direction: column;
+  padding-right: 10rpx;
+}
+.btnItem image{
+  width: 120rpx;
+  height: 120rpx;
+}
+.btnItem text{
+  margin-top: 0rpx;
+  font-size: 28rpx;
+  color: gray;
+  display: flex;
+}
+
+.text1{
+  font-size: 28px;
+  color: #87c38f
+}
+
+.allselect{
+  padding-top: 0rpx;
+  display: flex;
+  height: 100rpx;
+  flex-wrap: wrap;
+  }
+
+  
+.lable{
+  width:50%;
+  font-size:25px;
+  color: #828292;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+  }
+
+  .activy{
+    padding-top: 160px;
+    height: 240px;
+  }
+  .activy image{
+    height: 200px;
+    width: 390px;
+  }
+  
+ 
+
+
+
+
+  .btn{
+      margin-bottom: 70rpx;
+      background-color:#619969;
+      width: 100%;
+      border-radius: 80rpx;
+      color:black;
+      box-shadow: 0rpx 0rpx #828292;
+      bottom: 0;
+      right:95px;
+      position: fixed;
+      height: 85rpx;
+      font-size:larger;
+  }
+ 
+
+
+ 

@@ -34,7 +34,7 @@
 
 <!-- 大按钮的代码 -->
 <view class="bigbtn">
-<image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/donationImg/btn.jpg"></image>
+<image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/donationImg/btn.jpg" mode="widthFix" bindtap="changeweb"></image>
 </view>
 
 <view class="imp">

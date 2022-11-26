@@ -33,6 +33,11 @@ Page({
      url: '../buy/buy',
    }) 
   },
+  changeweb3(){
+    wx:wx.navigateTo({
+      url: '../donation/donation',
+    }) 
+   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成

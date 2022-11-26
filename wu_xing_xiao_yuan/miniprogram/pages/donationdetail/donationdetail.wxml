@@ -1,0 +1,81 @@
+<!-- 背景图片的设置 -->
+<view class="background">
+<image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/donationdetail_img/背景.jpg" ></image>
+</view>
+
+<view class="imp">
+<text >回收品类</text>
+</view>
+
+<!-- 五个小图标 -->
+<view class="allbtn">
+<view class="btnItem">
+  <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/donationdetail_img/衣服.jpg"></image>
+  <text>衣物</text>
+  </view>
+  <view class="btnItem">
+  <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/donationdetail_img/鞋子.jpg"></image>
+  <text>鞋子</text>
+  </view>
+  <view class="btnItem">
+  <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/donationdetail_img/帽子.jpg"></image>
+  <text>帽子</text>
+  </view>
+  <view class="btnItem">
+  <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/donationdetail_img/包包.jpg"></image>
+  <text>旧包</text>
+  </view>
+  <view class="btnItem">
+  <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/donationdetail_img/玩具.jpg"></image>
+  <text>玩具</text>
+  </view>
+</view>
+
+<view class="allselect">
+<text class="text1">快递上门取件</text>
+</view>
+
+<view class="allselect">
+ <view class="lable">取件时间</view>
+<picker  class="lable" 
+   style="height:100rpx;font-size: 35rpx;color: #555;" bindchange="bindPickerChange1" value="{{index}}" range="{{selectArray}}">
+    <view class="picker">
+          {{selectArray[currenttime]}}
+    </view>
+  </picker>
+
+  <view class="lable">取件地点</view>
+  <picker  class="lable" 
+   style="height:100rpx;font-size: 35rpx;color: #555;" bindchange="bindPickerChange2" value="{{index}}" range="{{addressArray}}">
+    <view class="picker">
+      {{addressArray[currentaddress]}}
+    </view>
+  </picker>
+
+  <view class="lable">预估重量</view>
+   <picker  class="lable" 
+   style="height:100rpx;font-size: 35rpx;color: #555;" bindchange="bindPickerChange3" value="{{index}}" range="{{weightArray}}">
+    <view class="picker">
+      {{weightArray[currentweight]}}
+    </view>
+  </picker>
+  </view>
+
+ 
+
+<view class="activy">
+<image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/donationdetail_img/活动图.jpg"></image>
+</view>
+
+
+
+
+
+
+<button class="btn" bindtap="confirms">确定预约</button>
+
+
+
+
+
+

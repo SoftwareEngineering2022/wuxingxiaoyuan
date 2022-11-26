@@ -10,8 +10,8 @@
     "pages/message/message",
     "pages/issue/issue",
     "pages/ShoppingCart/ShoppingCart",
-    "pages/PersonalCenter/PersonalCenter"
-
+    "pages/PersonalCenter/PersonalCenter",
+    "pages/donationdetail/donationdetail"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -19,44 +19,40 @@
     "navigationBarTitleText": "物行校园",
     "navigationBarTextStyle": "white"
   },
-
-
-"tabBar": {
-      "list": [
-        {
-          "pagePath": "pages/index/index",
-          "text": "首页",
-          "iconPath": "/images/HomePage/shouye.png",
-          "selectedIconPath": "/images/HomePage/shouye-2.png"
-        },
-        {
-          "pagePath": "pages/message/message",
-          "text": "消息",
-          "iconPath": "/images/HomePage/xiaoxi.png",
-          "selectedIconPath": "/images/HomePage/xiaoxi-2.png"
-        },
-        {
-          "pagePath": "pages/issue/issue",
-          "text": "发布",
-          "iconPath": "/images/HomePage/fabu.png",
-          "selectedIconPath": "/images/HomePage/fabu-2.png"
-        },
-        {
-          "pagePath": "pages/ShoppingCart/ShoppingCart",
-          "text": "购物车",
-          "iconPath": "/images/HomePage/gouwuche.png",
-          "selectedIconPath": "/images/HomePage/gouwuche-2.png"
-        },
-        {
-          "pagePath": "pages/PersonalCenter/PersonalCenter",
-          "text": "个人中心",
-          "iconPath": "/images/HomePage/gerenzhongxin.png",
-          "selectedIconPath": "/images/HomePage/gerenzhongxin-2.png"
-        }
-      ]
-    },
-    "style": "v2",
-    "sitemapLocation": "sitemap.json"
-  
-
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/HomePage/shouye.png",
+        "selectedIconPath": "/images/HomePage/shouye-2.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "/images/HomePage/xiaoxi.png",
+        "selectedIconPath": "/images/HomePage/xiaoxi-2.png"
+      },
+      {
+        "pagePath": "pages/issue/issue",
+        "text": "发布",
+        "iconPath": "/images/HomePage/fabu.png",
+        "selectedIconPath": "/images/HomePage/fabu-2.png"
+      },
+      {
+        "pagePath": "pages/ShoppingCart/ShoppingCart",
+        "text": "购物车",
+        "iconPath": "/images/HomePage/gouwuche.png",
+        "selectedIconPath": "/images/HomePage/gouwuche-2.png"
+      },
+      {
+        "pagePath": "pages/PersonalCenter/PersonalCenter",
+        "text": "个人中心",
+        "iconPath": "/images/HomePage/gerenzhongxin.png",
+        "selectedIconPath": "/images/HomePage/gerenzhongxin-2.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
 }

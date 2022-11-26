@@ -1,6 +1,6 @@
 /* pages/donation/donation.wxss */
 swiper{
-  height:520rpx;
+  height:550rpx;
 }
 swiper image{
   width: 100%;
@@ -15,15 +15,15 @@ swiper image{
   
 }
 .btnItem{
-  width: 100rpx;
+  width: 150rpx;
   display: flex;
   align-items:center;
   flex-direction: column;
   padding-right: 60rpx;
 }
 .btnItem image{
-  width: 70rpx;
-  height: 70rpx;
+  width: 90rpx;
+  height: 90rpx;
 }
 .btnItem text{
   margin-top: 0rpx;
@@ -34,22 +34,23 @@ swiper image{
 
 /* 旧衣物回收的WXSS格式 */
 .bigbtn{
-  height: 100rpx;
+  height: 180rpx;
+  width: 490px;
   align-items: center;
-  padding-left: 40rpx;
   padding-top: 15rpx;
 }
 
 .bigbtn image{
-  height:150rpx;
+  height:180rpx;
+  width: 75%;
 }
 
 /* 热门活动四个字的style设置 */
 .imp{
-  margin-top: 50rpx;
+  margin-top: 30rpx;
 }
 .imp text{
-  font-size: 38rpx;
+  font-size: 45rpx;
   color: gray;
 }
 
@@ -58,16 +59,17 @@ swiper image{
   padding-top: 0rpx;
   display: flex;
   flex-wrap: wrap;
+  
 }
 .btnItem2{
+  margin-bottom: 0px;
   width: 50%;
-  height: 90px;
+  height: 140px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  
 }
 .btnItem2 image{
-  width: 180px;
-  height: 100px;
+  width: 200px;
+  height: 120px;
 }
