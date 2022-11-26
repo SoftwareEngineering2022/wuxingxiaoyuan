@@ -32,7 +32,7 @@
         },
         {
           "name": "",
-          "pathName": "pages/index/index",
+          "pathName": "pages/donationdetail/donationdetail",
           "query": "",
           "launchMode": "default",
           "scene": null

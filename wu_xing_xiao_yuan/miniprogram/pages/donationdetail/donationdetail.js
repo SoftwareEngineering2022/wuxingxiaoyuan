@@ -44,7 +44,15 @@ Page({
       currentweight: e.detail.value
     })
   },
-  
+  submitdata(){
+    db.collection("donationDetail").add({
+      data:{
+        time:this.data.selectArray[this.data.currenttime],
+        address:this.data.addressArray[this.data.currentaddress],
+        weight:this.data.weightArray[this.data.currentweight]
+      }
+    }).then(res=>{console.log(res)})
+  },
 
 
 
@@ -56,22 +64,23 @@ Page({
     success (res) {
       if (res.confirm) {
         console.log('用户点击确定'),
-        state=true
+        wx.showToast({
+          title: '提交成功',
+          duration: 2000,
+          icon: 'success'
+        }),
+        this.submitdata()
       } else if (res.cancel) {
         console.log('用户点击取消')
       }
     }
+    
   })
-  db.collection("donationDetail").add({
-    data:{
-      time:this.data.selectArray[this.data.currenttime],
-      address:this.data.addressArray[this.data.currentaddress],
-      weight:this.data.weightArray[this.data.currentweight]
-    }
-  }).then(res=>{console.log(res)})
-
+  
+  
 
 },
+
 
 
 
