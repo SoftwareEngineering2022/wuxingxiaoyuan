@@ -1,0 +1,38 @@
+.title{
+  font-size: 36rpx;
+  margin: 20rpx;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.input{
+  font-size: 52rpx;
+  margin: 20rpx;
+  display: flex;
+  border-bottom: rgba(0, 0, 0, 0.18) solid 1rpx;
+}
+
+.input input{
+  width: 70%;
+  color: gray;
+  margin-top: 11rpx;
+  margin-left: 20rpx;
+}
+
+.button{
+  background-color: #FF7744;
+  color: #fff;
+  width: 80%;
+  font-size: 38rpx;
+  padding: 20rpx;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 12rpx;
+  margin-top: 50rpx;
+  margin-bottom: 50rpx;
+}
+
+.font .content{
+  margin: 20rpx;
+  color: gray;
+  font-size: 26rpx;
+}

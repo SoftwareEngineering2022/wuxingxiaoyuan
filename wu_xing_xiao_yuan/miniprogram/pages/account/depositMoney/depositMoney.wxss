@@ -1,0 +1,71 @@
+.title{
+  background-color: #FF7744;
+  height: 400rpx;
+}
+
+.title .money{
+  text-align: center;
+  margin-top: 100rpx;
+  font-size: 68rpx;
+  color: #fff;
+}
+
+.title .font{
+  text-align: center;
+  font-size: 30rpx;
+  margin-top: 30rpx;
+  color: #fff;
+}
+
+.title .button{
+  display: flex;
+  margin-top: 50rpx;
+}
+.title .button .input{
+  display: flex;
+}
+.title .button .input input{
+  padding-left: 20rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  background-color: #fff;
+  width: 200rpx;
+  color: #FF7744;
+  border-top-right-radius: 30rpx;
+  border-bottom-right-radius: 30rpx;
+}
+
+.title .button button{
+  background-color: #fff;
+  color: #FF7744;
+  font-weight: normal;
+  font-size: 28rpx;
+  font-weight: 600;
+  border-radius: 30rpx;
+}
+.title .button .but{
+  margin-left: 50rpx;
+  width: 100rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  background-color: rgb(255, 150, 89);
+  color: #ffffff;
+  font-weight: normal;
+  font-size: 28rpx;
+  font-weight: 600;
+  border-top-left-radius: 30rpx;
+  border-bottom-left-radius: 30rpx;
+}
+
+.contentTitle{
+  color: rgba(0, 0, 0, 0.7);
+  margin: 20rpx;
+  font-weight: 600;
+}
+
+.content{
+  color: gray;
+  font-size: 24rpx;
+  margin: 20rpx;
+}
