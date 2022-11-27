@@ -18,8 +18,8 @@
         },
         {
           "name": "",
-          "pathName": "pages/HomePage/goodDetail/goodDetail",
-          "query": "id=f2db72156374f46500d2f08b0454a2a0",
+          "pathName": "pages/index/index",
+          "query": "",
           "launchMode": "default",
           "scene": null
         },

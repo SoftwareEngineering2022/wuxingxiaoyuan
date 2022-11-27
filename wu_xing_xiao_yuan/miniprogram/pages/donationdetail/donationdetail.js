@@ -44,7 +44,8 @@ Page({
       currentweight: e.detail.value
     })
   },
-  submitdata(){
+
+   submitdata(){
     db.collection("donationDetail").add({
       data:{
         time:this.data.selectArray[this.data.currenttime],
@@ -59,26 +60,15 @@ Page({
 
   confirms(){
   wx.showModal({
-    title: '提示',
-    content: '确认预约',
-    success (res) {
-      if (res.confirm) {
-        console.log('用户点击确定'),
-        wx.showToast({
-          title: '提交成功',
-          duration: 2000,
-          icon: 'success'
-        }),
-        this.submitdata()
-      } else if (res.cancel) {
-        console.log('用户点击取消')
-      }
-    }
-    
-  })
-  
-  
+    title: '温馨提示',
+    content: '预约成功',
+    success(res) {},
+    fail(res){},
+    showCancel:false,
+    confirmText:"确定"
+    }),
 
+    this.submitdata()
 },
 
 
