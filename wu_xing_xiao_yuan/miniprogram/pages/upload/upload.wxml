@@ -9,14 +9,13 @@
     <input placeholder="请输入您的商品名称" name="goodsName"></input>
   </view>
 
-
 <!--商品类别-->
 
   <view class='title'>
     <view class='title_text'>
       <radio-group name="fenlei">
-      <block wx:for="{{fenlei}}" wx:key="_id">
-      <radio style="margin-left: 10rpx; padding-top: 5rpx;" value="{{item.name}}">{{item.name}}</radio>
+        <block wx:for="{{fenlei}}" wx:key="_id">
+        <radio style="margin-left: 20rpx; padding-top: 5rpx;" value="{{item.name}}"></radio>{{item.name}}
       </block>
       </radio-group>
     </view>
@@ -38,7 +37,7 @@
     <view class='title_text'>
         <text>交易方式</text>
         <checkbox-group name="tardingMethod" style="margin-left: 50rpx;">
-        <checkbox value="可置换" bindtap="onChangeShowState2">可置换</checkbox> <checkbox name="checkbox2" style="margin-left: 20rpx;" value="可购买" bindtap="onChangeShowState">可购买</checkbox>
+        <checkbox value="可置换" bindtap="onChangeShowState2"></checkbox>可置换<checkbox name="checkbox2" style="margin-left: 20rpx;" value="可购买" bindtap="onChangeShowState"></checkbox>可购买
         </checkbox-group>
   </view>
 
@@ -59,11 +58,13 @@
   </view>  
 
   <!--商品简介-->
+  <view class="title">
   <view class='title_text'>
     <text>商品简介</text>
     <textarea name="info" placeholder="您可以在此输入您上传商品的基本信息，如：品牌、保质期、使用情况、是否可议价、等（80字）" class='textarea'></textarea>
   </view>
   </view>
+</view>
 
   <!--上传图片-->
 <view class="up">
@@ -72,10 +73,8 @@
       <image src="{{item}}" style="width: 80rpx;height: 80rpx;"></image>
       <button size="mini" type="warn" plain="true" bindtap="delete" data-id="{{index}}" data-src="{{item}}">删除图片</button>
   </block>
-  <view>
-    <button size="mini" type="primary" bindtap="upload_img" style="background-color: rgb(125, 169, 252);text-align: center;">添加图片</button>
-  </view>
   </scroll-view>
+  <button class="addImg" bindtap="upload_img">添加图片</button>
 </view>
   
   <button form-type='submit' class='sureRelease'>确认发布</button>
