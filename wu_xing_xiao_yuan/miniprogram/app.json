@@ -11,7 +11,8 @@
     "pages/issue/issue",
     "pages/ShoppingCart/ShoppingCart",
     "pages/PersonalCenter/PersonalCenter",
-    "pages/donationdetail/donationdetail"
+    "pages/donationdetail/donationdetail",
+    "pages/upload/upload"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -34,7 +35,7 @@
         "selectedIconPath": "/images/HomePage/xiaoxi-2.png"
       },
       {
-        "pagePath": "pages/issue/issue",
+        "pagePath": "pages/upload/upload",
         "text": "发布",
         "iconPath": "/images/HomePage/fabu.png",
         "selectedIconPath": "/images/HomePage/fabu-2.png"

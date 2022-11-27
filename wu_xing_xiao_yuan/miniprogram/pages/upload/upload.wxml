@@ -1,0 +1,82 @@
+<!--pages/upload/upload.wxml-->
+
+<form bindsubmit="submit">
+ <!--商品名称-->
+<view class="up">
+
+  <view class='title_text'>
+    <text >商品名称</text>
+    <input placeholder="请输入您的商品名称" name="goodsName"></input>
+  </view>
+
+
+<!--商品类别-->
+
+  <view class='title'>
+    <view class='title_text'>
+      <radio-group name="fenlei">
+      <block wx:for="{{fenlei}}" wx:key="_id">
+      <radio style="margin-left: 10rpx; padding-top: 5rpx;" value="{{item.name}}">{{item.name}}</radio>
+      </block>
+      </radio-group>
+    </view>
+  </view>
+
+<!--商品使用程度-->
+<view class='title' style="padding-top: 20rpx;">
+  <view class="title_text">商品新旧程度</view>
+  <view class="section section_gap">
+    <slider name="freshness" number="20" max="10" show-value/>
+  </view>
+</view>
+
+</view>
+
+
+<view class='info-point'>
+<!--商品交易方式-->
+    <view class='title_text'>
+        <text>交易方式</text>
+        <checkbox-group name="tardingMethod" style="margin-left: 50rpx;">
+        <checkbox value="可置换" bindtap="onChangeShowState2">可置换</checkbox> <checkbox name="checkbox2" style="margin-left: 20rpx;" value="可购买" bindtap="onChangeShowState">可购买</checkbox>
+        </checkbox-group>
+  </view>
+
+    <!--想置换的商品-->
+    <view class="{{showView2?'bright789_view_show':'bright789_view_hide'}}">
+    <view class='title_text'>
+      <text>置换意向</text>
+      <input name="substitutionIntent" placeholder="您可以在这里输入您想换到的商品"></input>
+    </view>
+  </view>
+
+  <!--商品价格-->
+  <view class="{{showView?'bright789_view_show':'bright789_view_hide'}}">
+    <view class='title_text'>
+      <text>商品价格</text>
+      <input name="price" type='number' placeholder="默认单位为元，您只需输入数字"></input>
+    </view>
+  </view>  
+
+  <!--商品简介-->
+  <view class='title_text'>
+    <text>商品简介</text>
+    <textarea name="info" placeholder="您可以在此输入您上传商品的基本信息，如：品牌、保质期、使用情况、是否可议价、等（80字）" class='textarea'></textarea>
+  </view>
+  </view>
+
+  <!--上传图片-->
+<view class="up">
+  <scroll-view scroll-y="true">
+    <block wx:for="{{img}}">
+      <image src="{{item}}" style="width: 80rpx;height: 80rpx;"></image>
+      <button size="mini" type="warn" plain="true" bindtap="delete" data-id="{{index}}" data-src="{{item}}">删除图片</button>
+  </block>
+  <view>
+    <button size="mini" type="primary" bindtap="upload_img" style="background-color: rgb(125, 169, 252);text-align: center;">添加图片</button>
+  </view>
+  </scroll-view>
+</view>
+  
+  <button form-type='submit' class='sureRelease'>确认发布</button>
+</form>
