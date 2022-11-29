@@ -56,14 +56,14 @@
 .lable{
   width:50%;
   font-size:25px;
-  color: #828292;
+  color: #434347;
   display: flex;
   flex-direction: column;
   padding-bottom: 30px;
   }
 
   .activy{
-    padding-top: 160px;
+    padding-top: 340px;
     height: 240px;
   }
   .activy image{

@@ -12,10 +12,14 @@ Page({
     currenttime:0,
     currentweight:0,
     currentaddress:0,
+    slelectedtime:0,
     resume:0,
+    currentactivy:0,
     selectArray: ["8.00-9.00","9:00-10:00","10:00-11:00","13:00-14:00","14:00-15:00","15:00-16:00","16:00-17:00"],
     addressArray:["上师大东门","上师大南门","上师大菜鸟驿站","华理南门","华理菜鸟驿站","华理北门","应技大东门","应技大北门","应技大菜鸟驿站"],
     weightArray:["3-10kg","10-20kg","20-50kg","50kg以上"],
+    selecttime:["11月29日","11月30日","12月1日","12月2日","12月3日"],
+    activyArr:["旧衣回收活动","流浪猫狗旧衣筑窝","冬日送温暖活动"],
    time:"",
    address:"",
    weight:""
@@ -44,10 +48,27 @@ Page({
       currentweight: e.detail.value
     })
   },
+  bindPickerChange4: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      currentChoose: e.detail.value,
+      slelectedtime: e.detail.value
+    })
+  },
+  bindPickerChange5: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      currentChoose: e.detail.value,
+      currentactivy: e.detail.value
+    })
+  },
+  
 
    submitdata(){
     db.collection("donationDetail").add({
       data:{
+        activity:this.data.activyArr[this.data.currentactivy],
+        day:this.data.selecttime[this.data.slelectedtime],
         time:this.data.selectArray[this.data.currenttime],
         address:this.data.addressArray[this.data.currentaddress],
         weight:this.data.weightArray[this.data.currentweight]

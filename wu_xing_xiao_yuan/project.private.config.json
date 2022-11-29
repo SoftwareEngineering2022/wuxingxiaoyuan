@@ -18,7 +18,7 @@
         },
         {
           "name": "",
-          "pathName": "pages/goodDetail/goodDetail",
+          "pathName": "pages/upload/upload",
           "query": "",
           "launchMode": "default",
           "scene": null
