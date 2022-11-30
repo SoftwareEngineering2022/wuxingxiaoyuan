@@ -18,8 +18,8 @@
         },
         {
           "name": "",
-          "pathName": "pages/goodDetail/goodDetail",
-          "query": "",
+          "pathName": "pages/HomePage/goodDetail/goodDetail",
+          "query": "id=f2db72156374f46500d2f08b0454a2a0",
           "launchMode": "default",
           "scene": null
         },
@@ -33,6 +33,34 @@
         {
           "name": "",
           "pathName": "pages/donationdetail/donationdetail",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/change/change",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/donation/donation",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/index/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/fenlei/fenlei",
           "query": "",
           "launchMode": "default",
           "scene": null

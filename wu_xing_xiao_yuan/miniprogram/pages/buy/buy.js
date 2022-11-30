@@ -19,8 +19,8 @@ Page({
   // 搜索事件
   search:function(e){
     let that = this
-    db.collection('goodsList').where({
-      name:e.detail.value
+    db.collection('goods').where({
+      goodsName:e.detail.value
     }).get({
       success:function(res){
         that.setData({
@@ -67,7 +67,9 @@ Page({
         console.log('分类获取失败',res)
       },
     })
-    db.collection('goodsList').get({
+    db.collection('goods').orderBy('upload_time','desc').where({
+    tardingMethod:"可购买"
+    }).get({
       success:function(res){
         console.log('商品获取成功',res)
         that.setData({

@@ -27,7 +27,7 @@
 <view class="allbtn">
 <view class="btnItem">
   <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/button-img/购物.png"></image>
-  <text>聊聊</text>
+  <text>出价</text>
   </view>
   <view class="btnItem">
   <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/button-img/分享.png"></image>
@@ -37,7 +37,7 @@
   <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/button-img/关注.png"></image>
   <text>喜欢</text>
   </view>
-  <button class="btn2" size="mini">加入购物车</button>
-  <button class="btn3" size="mini">立即购买</button>
 </view>
 
+<button class="btn2" size="mini">和他聊聊</button>
+<button class="btn3" size="mini">立即购买</button>

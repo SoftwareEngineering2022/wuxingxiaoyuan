@@ -12,6 +12,8 @@
     "pages/ShoppingCart/ShoppingCart",
     "pages/PersonalCenter/PersonalCenter",
     "pages/donationdetail/donationdetail",
+    "pages/buy_fenlei/buy_fenlei",
+    "pages/chan_fenlei/chan_fenlei",
     "pages/upload/upload"
   ],
   "window": {

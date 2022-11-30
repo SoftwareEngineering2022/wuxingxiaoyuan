@@ -11,6 +11,7 @@ Page({
       id: 0,
       type: 'image',
       url: 'cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/swiper-photos/1.jpg'
+      
     }, {
       id: 1,
         type: 'image',
@@ -33,6 +34,11 @@ Page({
      url: '../buy/buy',
    }) 
   },
+  changeweb2(){
+    wx:wx.navigateTo({
+      url: '../change/change',
+    }) 
+   },
   changeweb3(){
     wx:wx.navigateTo({
       url: '../donation/donation',

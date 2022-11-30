@@ -69,7 +69,7 @@ Page({
     submit:function(e){
       let that = this
       console.log(e)
-      if(e.detail.value.goodsName!=""&&e.detail.value.fenlei!=""&&e.detail.value.tardingMethod!=""){//&&e.detail.value.info!=""不允许不上传图片
+      if(e.detail.value.goodsName!=""&&e.detail.value.fenlei!=""&&e.detail.value.tardingMethod!=""&&e.detail.value.info!=""){//&&that.data.img.length!==0允许不上传图片
         db.collection('goods').add({
           data:{
             goodsName:e.detail.value.goodsName,
@@ -80,19 +80,12 @@ Page({
             price:e.detail.value.price+'元',
             info:e.detail.value.info,
             src:that.data.img,
-						// update_time: timeutil.TimeCode(new Date()),
-            upload_time:db.serverDate(),
             // num:0
           },success:function(res){
             wx.showToast({
               title: '发布成功',
-            });
-            setTimeout(function() {
-              wx.redirectTo({
-                url: '../PersonalCenter/PersonalCenter',
-              });
-          }, 1000)
-           
+            })
+            
           }
         })
       }else{
