@@ -1,5 +1,6 @@
-/* pages/donationdetail/donationdetail.wxss *//* pages/donationdetail/donationdetail.wxss */
+/* pages/donationdetail/donationdetail.wxss */
 /* 背景图的格式 */
+
 .background{
   height: 240px;
 }
