@@ -29,22 +29,22 @@
 <!-- 下方表格 -->
 <view class="bottom">
     <view class="bottom-content">
-        <navigator url="../account/account"><view class="me-about">
-            <text>个人账户</text>
-            <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/image/PersonalCenter/next.png"></image>
+        <navigator url="../account/account" ><view class="me-about">
+            <text >个人账户</text>
+            <image  src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/image/PersonalCenter/next.png"></image>
         </view></navigator>
 
-        <navigator url="myPublish/myPublish"><view class="me-about">
+        <navigator url="../myPublish/myPublish"><view class="me-about">
             <text>我的发布</text>
             <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/image/PersonalCenter/next.png"></image>
         </view></navigator>
 
-        <navigator url="myPurchaseOrder/myPurchaseOrder"><view class="me-about">
+        <navigator url="../myPurchaseOrder/myPurchaseOrder"><view class="me-about">
             <text>我的购买</text>
             <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/image/PersonalCenter/next.png"></image>
         </view></navigator>
 
-        <navigator url="myReplacementOrder/myReplacementOrder"><view class="me-about">
+        <navigator url="../myReplacementOrder/myReplacementOrder"><view class="me-about">
             <text>我的置换</text>
             <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/image/PersonalCenter/next.png"></image>
         </view></navigator>

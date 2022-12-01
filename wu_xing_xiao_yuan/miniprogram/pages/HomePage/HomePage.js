@@ -4,8 +4,22 @@ Page({
   /**
    * 页面的初始数据
    */
+  //由调用者决定调用什么
   data: {
-
+    swiperTitle:"每日资讯",
+    swiperList: [{
+      id: 0,
+      type: 'image',
+      url: 'cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/swiper-photos/1.jpg'
+    }, {
+      id: 1,
+        type: 'image',
+        url: 'cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/swiper-photos/2.jpg',
+    }, {
+      id: 2,
+      type: 'image',
+      url: 'cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/swiper-photos/3.jpg'
+    }],
   },
 
   /**
@@ -15,8 +29,23 @@ Page({
 
   },
   changeweb1(){
+   wx:wx.navigateTo({
+     url: '../buy/buy',
+   }) 
+  },
+  changeweb2(){
     wx:wx.navigateTo({
-      url: '/pages/buy/buy',
+      url: '../change/change',
+    }) 
+   },
+  changeweb3(){
+    wx:wx.navigateTo({
+      url: '../donation/donation',
+    }) 
+   },
+   changeweb4(){
+    wx:wx.navigateTo({
+      url: '../TradingGuide/TradingGuide',
     }) 
    },
   /**

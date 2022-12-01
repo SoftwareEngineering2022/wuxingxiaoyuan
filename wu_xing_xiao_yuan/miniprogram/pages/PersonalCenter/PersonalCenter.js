@@ -32,7 +32,11 @@ Page({
 
   },
   
-  
+  changeweb1(){
+    wx:wx.navigateTo({
+      url: '../myPublish/myPublish',
+    }) 
+   },
 
 
   // getUserProfile(e) {
