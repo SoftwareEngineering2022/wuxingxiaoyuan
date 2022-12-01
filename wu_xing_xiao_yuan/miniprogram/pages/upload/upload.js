@@ -77,7 +77,7 @@ Page({
             freshness:e.detail.value.freshness+'成新',
             tardingMethod:e.detail.value.tardingMethod,
             substitutionIntent:e.detail.value.substitutionIntent,
-            price:e.detail.value.price+'元',
+            price:e.detail.value.price,
             info:e.detail.value.info,
             src:that.data.img,
             // num:0

@@ -1,4 +1,4 @@
-// pages/help/help.js
+// pages/TradingGuide/TradingGuide.js
 Page({
 
   /**
