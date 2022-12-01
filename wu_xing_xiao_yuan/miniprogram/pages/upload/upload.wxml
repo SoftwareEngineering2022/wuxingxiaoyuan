@@ -76,6 +76,5 @@
   </scroll-view>
   <button class="addImg" bindtap="upload_img">添加图片</button>
 </view>
-  
   <button form-type='submit' class='sureRelease'>确认发布</button>
 </form>
