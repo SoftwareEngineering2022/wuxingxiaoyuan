@@ -77,6 +77,5 @@
   </view>
   </scroll-view>
 </view>
-  
   <button form-type='submit' class='sureRelease'>确认发布</button>
 </form>
