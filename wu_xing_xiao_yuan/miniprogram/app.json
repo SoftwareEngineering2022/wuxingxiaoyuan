@@ -1,21 +1,16 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/HomePage/HomePage",
     "pages/buy/buy",
     "pages/change/change",
     "pages/donation/donation",
-    "pages/buy_fenlei/buy_fenlei",
-    "pages/chan_fenlei/chan_fenlei",
-    "pages/TradingGuide/TradingGuide",
+    "pages/help/help",
     "pages/goodDetail/goodDetail",
     "pages/message/message",
+    "pages/issue/issue",
     "pages/ShoppingCart/ShoppingCart",
     "pages/PersonalCenter/PersonalCenter",
-    "pages/account/account",
-    "pages/myPublish/myPublish",
-    "pages/myPurchaseOrder/myPurchaseOrder",
-    "pages/myReplacementOrder/myReplacementOrder",
-    "pages/concerning/concerning",
     "pages/donationdetail/donationdetail",
     "pages/buy_fenlei/buy_fenlei",
     "pages/chan_fenlei/chan_fenlei",
@@ -30,7 +25,7 @@
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/HomePage/HomePage",
+        "pagePath": "pages/index/index",
         "text": "首页",
         "iconPath": "/images/HomePage/shouye.png",
         "selectedIconPath": "/images/HomePage/shouye-2.png"

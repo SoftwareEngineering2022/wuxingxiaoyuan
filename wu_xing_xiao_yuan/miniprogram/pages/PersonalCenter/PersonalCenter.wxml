@@ -18,37 +18,23 @@
 <!-- 下方表格 -->
 <view class="bottom">
     <view class="bottom-content">
-<<<<<<< HEAD
         
         <navigator url="../account/account"><view class="me-about">
             <text>个人账户</text>
             <image src="../../images/common/next.png"></image>
-=======
-        <navigator url="../account/account" ><view class="me-about">
-            <text >个人账户</text>
-            <image  src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/image/PersonalCenter/next.png"></image>
->>>>>>> c41962f166ea2bd178659ca0735a250a4eccb97b
         </view></navigator>
 
-        <navigator url="../myPublish/myPublish"><view class="me-about">
+        <navigator url="myPublish/myPublish"><view class="me-about">
             <text>我的发布</text>
             <image src="../../images/common/next.png"></image>
         </view></navigator>
 
-<<<<<<< HEAD
         <navigator url="myList/myList"><view class="me-about">
-=======
-        <navigator url="../myPurchaseOrder/myPurchaseOrder"><view class="me-about">
->>>>>>> c41962f166ea2bd178659ca0735a250a4eccb97b
             <text>我的购买</text>
             <image src="../../images/common/next.png"></image>
         </view></navigator>
 
-<<<<<<< HEAD
         <navigator url="myList/myList"><view class="me-about">
-=======
-        <navigator url="../myReplacementOrder/myReplacementOrder"><view class="me-about">
->>>>>>> c41962f166ea2bd178659ca0735a250a4eccb97b
             <text>我的置换</text>
             <image src="../../images/common/next.png"></image>
         </view></navigator>

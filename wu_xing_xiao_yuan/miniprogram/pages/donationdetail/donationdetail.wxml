@@ -35,23 +35,7 @@
 <text class="text1">快递上门取件</text>
 </view>
 
-
 <view class="allselect">
-  <view class="lable">活动选择</view>
-<picker  class="lable" 
-   style="height:100rpx;font-size: 35rpx;color: #555;" bindchange="bindPickerChange5" value="{{index}}" range="{{activyArr}}">
-    <view class="picker">
-          {{activyArr[currentactivy]}}
-    </view>
-  </picker>
-  
-  <view class="lable">取件日期</view>
-<picker  class="lable" 
-   style="height:100rpx;font-size: 35rpx;color: #555;" bindchange="bindPickerChange4" value="{{index}}" range="{{selecttime}}">
-    <view class="picker">
-          {{selecttime[slelectedtime]}}
-    </view>
-  </picker>
  <view class="lable">取件时间</view>
 <picker  class="lable" 
    style="height:100rpx;font-size: 35rpx;color: #555;" bindchange="bindPickerChange1" value="{{index}}" range="{{selectArray}}">

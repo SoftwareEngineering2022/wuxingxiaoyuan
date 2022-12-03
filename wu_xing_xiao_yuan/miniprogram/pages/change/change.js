@@ -16,12 +16,18 @@ Page({
    fenlei:function(e){
     console.log(e)
   },
-  // 搜索事件
+  // 模糊搜索事件
   search:function(e){
+    let key = e.detail.value
     let that = this
     db.collection('goods').where({
-      goodsName:e.detail.value
-    }).get({
+      goodsName:db.RegExp({
+        regexp: '.*' + key,
+        options: 'i',
+    }),
+     tardingMethod:"可置换" 
+  })
+    .get({
       success:function(res){
         that.setData({
           search:res.data

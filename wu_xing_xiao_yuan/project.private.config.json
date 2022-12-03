@@ -18,13 +18,8 @@
         },
         {
           "name": "",
-<<<<<<< HEAD
           "pathName": "pages/HomePage/goodDetail/goodDetail",
           "query": "id=f2db72156374f46500d2f08b0454a2a0",
-=======
-          "pathName": "pages/upload/upload",
-          "query": "",
->>>>>>> c834dff1bd371aba73c940e24c9864d2b9bf6040
           "launchMode": "default",
           "scene": null
         },
@@ -66,6 +61,27 @@
         {
           "name": "",
           "pathName": "pages/fenlei/fenlei",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/goodDetail/goodDetail",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/buy_fenlei/buy_fenlei",
+          "query": "name=%E9%A3%9F%E5%93%81",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/ShoppingCart/ShoppingCart",
           "query": "",
           "launchMode": "default",
           "scene": null

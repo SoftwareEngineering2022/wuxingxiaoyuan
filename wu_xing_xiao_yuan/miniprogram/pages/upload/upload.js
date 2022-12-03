@@ -69,11 +69,7 @@ Page({
     submit:function(e){
       let that = this
       console.log(e)
-<<<<<<< HEAD
       if(e.detail.value.goodsName!=""&&e.detail.value.fenlei!=""&&e.detail.value.tardingMethod!=""&&e.detail.value.info!=""){//&&that.data.img.length!==0允许不上传图片
-=======
-      if(e.detail.value.goodsName!=""&&e.detail.value.fenlei!=""&&e.detail.value.tardingMethod!=""&&e.detail.value.info!=""&&that.data.img.length!==0){//不允许不上传图片
->>>>>>> 6780d4a68eb369e0c9e990e0cda710540092ee7e
         db.collection('goods').add({
           data:{
             goodsName:e.detail.value.goodsName,
@@ -86,27 +82,13 @@ Page({
             src:that.data.img,
             // num:0
           },success:function(res){
-<<<<<<< HEAD
             wx.showToast({
               title: '发布成功',
             })
             
-=======
-           wx.showToast({
-               title: '发布成功',
-             
-              success:function(res){
-                 setTimeout(function () {
-             wx.redirectTo({
-             url: '../PersonalCenter/PersonalCenter',
-             })
-            }, 1000)
->>>>>>> 6780d4a68eb369e0c9e990e0cda710540092ee7e
           }
         })
-      }
-    })
-  }else{
+      }else{
         wx.showToast({
           title: '您还有未填写的信息',
           icon:"none"
@@ -180,13 +162,10 @@ Page({
   },
 
   /**
-   * 页面相关事件处理函数--监听用户下拉动作-->触底加载
+   * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh() {
-    let that = this
-    wx.redirectTo({
-      url: '../upload/upload',
-    })
+
   },
 
   /**
@@ -195,7 +174,6 @@ Page({
   onReachBottom() {
 
   },
-
 
   /**
    * 用户点击右上角分享

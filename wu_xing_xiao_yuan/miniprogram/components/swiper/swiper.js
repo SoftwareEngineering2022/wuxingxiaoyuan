@@ -9,7 +9,7 @@ Component({
    * 组件的属性列表
    */
   properties: {
-  //  swiperTitle:String,
+   swiperTitle:String,
    swiperList:Array
   },
 

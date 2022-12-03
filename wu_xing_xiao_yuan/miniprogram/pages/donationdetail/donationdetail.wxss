@@ -1,6 +1,5 @@
-/* pages/donationdetail/donationdetail.wxss */
+/* pages/donationdetail/donationdetail.wxss *//* pages/donationdetail/donationdetail.wxss */
 /* 背景图的格式 */
-
 .background{
   height: 240px;
 }
@@ -57,14 +56,14 @@
 .lable{
   width:50%;
   font-size:25px;
-  color: #434347;
+  color: #828292;
   display: flex;
   flex-direction: column;
   padding-bottom: 30px;
   }
 
   .activy{
-    padding-top: 340px;
+    padding-top: 160px;
     height: 240px;
   }
   .activy image{

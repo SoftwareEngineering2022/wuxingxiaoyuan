@@ -10,17 +10,21 @@ Page({
     product:[],
     search:[],
     num:20,
-    ss:false
   },
    // 分类跳转事件
    fenlei:function(e){
     console.log(e)
   },
-  // 搜索事件
+  // 模糊搜索事件
   search:function(e){
+    let key = e.detail.value
     let that = this
     db.collection('goods').where({
-      goodsName:e.detail.value
+      goodsName:db.RegExp({
+        regexp: '.*' + key,
+        options: 'i',
+      }),
+      tardingMethod:"可购买"
     }).get({
       success:function(res){
         that.setData({

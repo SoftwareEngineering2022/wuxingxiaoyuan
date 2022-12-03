@@ -1,4 +1,4 @@
-// pages/HomePage/HomePage.js
+// pages/help/help.js
 Page({
 
   /**
@@ -14,11 +14,7 @@ Page({
   onLoad(options) {
 
   },
-  changeweb1(){
-    wx:wx.navigateTo({
-      url: '/pages/buy/buy',
-    }) 
-   },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
