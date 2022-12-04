@@ -23,6 +23,6 @@
     <view>合计:￥{{money}}</view>
   </view>
   <view class="pay" bindtap="pay">
-    <view>去结算</view>
+    <view style="color: white;">去结算</view>
   </view>
 </view>

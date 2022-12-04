@@ -39,7 +39,7 @@
   bottom: 0;
   justify-content: space-between;
   width: 100%;
-  background-color: rgb(238, 238, 238);
+  background-color: white;
   align-items: center;
 } 
 .pay{
@@ -50,7 +50,7 @@
   align-self: center;
   justify-content: center;
   height: 80rpx;
-  background-color: rgb(255, 68, 35);
+  background-color: #9fc0ec
 }
 .sum{
   margin-right: 50rpx;
