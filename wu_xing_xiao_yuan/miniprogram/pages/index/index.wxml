@@ -19,10 +19,16 @@
 <!--具体按键的布局-->
 <view class="btn-imgList">
 <view class="btn-imgItem" bindtap="changeweb1"><image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/button-img/暂无储存.png">
+<<<<<<< HEAD
 
 </image>
 <text>我要买</text></view>
 <view class="btn-imgItem" bindtap="changeweb2"><image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/button-img/找不到页面.png">
+=======
+</image>
+<text>我要买</text></view>
+<view class="btn-imgItem" bindtap="changeweb1"><image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/button-img/找不到页面.png">
+>>>>>>> parent of c41962f (完善跳转路径)
 </image>
 <text>我要换</text></view>
 <view class="btn-imgItem" bindtap="changeweb3"><image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/button-img/暂无收藏.png">

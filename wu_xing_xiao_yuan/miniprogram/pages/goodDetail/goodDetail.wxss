@@ -1,4 +1,7 @@
 /* pages/goodDetail/goodDetail.wxss */
+
+
+
 .pic{
   height: 650rpx;
   width: 100%;
@@ -29,11 +32,11 @@
 }
 .describe{
   display: flex;
-  font-size: 40rpx;
+  font-size: 35rpx;
 
 }
 .range{
-  font-size:45rpx;
+  font-size:40rpx;
   color: #828292;
 }
 
@@ -46,6 +49,8 @@
   display: flex;
   position: fixed;
   bottom: 0;
+  
+  
 }
 .btnItem{
   width: 100rpx;

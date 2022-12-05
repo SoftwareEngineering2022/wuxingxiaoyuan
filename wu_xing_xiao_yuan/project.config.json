@@ -21,6 +21,8 @@
     "compileHotReLoad": false,
     "lazyloadPlaceholderEnable": false,
     "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": true,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
@@ -38,6 +40,9 @@
     "minifyWXML": true,
     "ignoreUploadUnusedFiles": true
   },
+  "appid": "wxae2bf7e9c9c7243b",
+  "projectname": "quickstart-wx-cloud",
+  "libVersion": "2.27.2",
   "cloudfunctionTemplateRoot": "cloudfunctionTemplate/",
   "condition": {
     "miniprogram": {
@@ -52,13 +57,12 @@
   },
   "srcMiniprogramRoot": "miniprogram/",
   "compileType": "miniprogram",
-  "editorSetting": {
-    "tabIndent": "insertSpaces",
-    "tabSize": 2
-  },
   "packOptions": {
     "ignore": [],
     "include": []
   },
-  "appid": "wxae2bf7e9c9c7243b"
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  }
 }

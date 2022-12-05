@@ -1,51 +1,61 @@
+
 <view class="title">
   <view class="login">
-    <!-- <image src="{{userinfo.avatarUrl}}"></image> -->
-    <view wx:if="{{headImg!=''}}">
-      <view class="filter"><image src="{{headImg}}" style="filter: blur(30px);"></image></view><!--模糊背景-->
+    
+    <view wx:if="{{userInfo}}">
+       <!--模糊背景-->
+      <view class="filter"><image src="{{userInfo.avatarUrl}}" style="filter: blur(30px);"></image></view>
+     
       <view class="img">
-        <image src="{{headImg}}"></image>
-        <view>{{userName}}</view>
+        <image  src="{{userInfo.avatarUrl}}"></image>
+        <view>{{userInfo.nickName}}</view>
       </view>
     </view>
+
     <view wx:else class="loginButton">
       <button class="admin" style="display:{{adminDisplay}}" type="primary" bindtap="getUserProfile">登录</button>
       <!--获取用户信息-->
     </view>
+
   </view>
 </view>
+
+
+
+
+
+
 
 <!-- 下方表格 -->
 <view class="bottom">
     <view class="bottom-content">
-        
-        <navigator url="../account/account"><view class="me-about">
-            <text>个人账户</text>
-            <image src="../../images/common/next.png"></image>
+        <navigator url="../account/account" ><view class="me-about">
+            <text >个人账户</text>
+            <image  src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/image/PersonalCenter/next.png"></image>
         </view></navigator>
 
-        <navigator url="myPublish/myPublish"><view class="me-about">
+        <navigator url="../myPublish/myPublish"><view class="me-about">
             <text>我的发布</text>
-            <image src="../../images/common/next.png"></image>
+            <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/image/PersonalCenter/next.png"></image>
         </view></navigator>
 
-        <navigator url="myList/myList"><view class="me-about">
+        <navigator url="../myPurchaseOrder/myPurchaseOrder"><view class="me-about">
             <text>我的购买</text>
-            <image src="../../images/common/next.png"></image>
+            <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/image/PersonalCenter/next.png"></image>
         </view></navigator>
 
-        <navigator url="myList/myList"><view class="me-about">
+        <navigator url="../myReplacementOrder/myReplacementOrder"><view class="me-about">
             <text>我的置换</text>
-            <image src="../../images/common/next.png"></image>
+            <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/image/PersonalCenter/next.png"></image>
         </view></navigator>
 
         <view class="me-about">
             <button open-type="contact" bindcontact="handleContact">联系客服</button>
-            <image src="../../images/common/next.png"></image>
+            <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/image/PersonalCenter/next.png"></image>
         </view>
         <navigator url="../concerning/concerning"><view class="me-about">
             <text>关于平台</text>
-            <image src="../../images/common/next.png"></image>
+            <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/image/PersonalCenter/next.png"></image>
         </view></navigator>
     </view>
   </view>

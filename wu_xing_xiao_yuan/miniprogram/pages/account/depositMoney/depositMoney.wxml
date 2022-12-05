@@ -1,0 +1,41 @@
+<view class="title">
+  <view class="money">
+    ¥{{money}}
+  </view>
+  <view class="font">
+    已缴纳保证金
+  </view>
+
+  <view class="button">
+    <view class="input">
+      <view class="but" bindtap="addDeposit">充值</view>
+      <input type="text" placeholder="0.00" bindinput="addMoney" value="{{addMoney}}"/>
+    </view>
+    <button bindtap="delectDeposit">申请退还</button>
+  </view>
+</view>
+
+<view>
+  <view class="contentTitle">
+    保证金说明：
+  </view>
+
+  <view class="content">
+    1.保证金最低金额为20元，可大于20元，保证金越高，您发布任务的信誉度越高，有利于您的任务快速完成。
+  </view>
+  <view class="content">
+    2.已缴纳保证金后，在发布任务时，列表会显示保证金表示，提高任务的信誉度，增加成交机会
+  </view>
+  <view class="content">
+    3.线上任务必须缴纳了保证金后才能发布。
+  </view>
+  <view class="content">
+    4.如果被投诉，平台会根据相关规定对投诉进行仲裁，根据仲裁结果，如果对任务承接方造成了损失，将从保证金中进行惩罚。
+  </view>
+  <view class="content">
+    5.私下进行推广违规任务，如：赌博，涉黄，骚扰，投资，造成用户投诉，并且对用户造成严重经济损失，情节较轻者处罚全部保证金，情节严重者上报公安局，进行依法处置。
+  </view>
+  <view class="content">
+    注：保证金可申请退还，提交申请后7个工作日内进行审查，无违规行为及投诉，保证金全额退还。
+  </view>
+</view>
