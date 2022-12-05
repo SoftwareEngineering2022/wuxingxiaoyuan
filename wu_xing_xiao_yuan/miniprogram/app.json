@@ -8,6 +8,7 @@
     "pages/chan_fenlei/chan_fenlei",
     "pages/TradingGuide/TradingGuide",
     "pages/goodDetail/goodDetail",
+    "pages/product_detail/product_detail",
     "pages/message/message",
     "pages/ShoppingCart/ShoppingCart",
     "pages/PersonalCenter/PersonalCenter",
