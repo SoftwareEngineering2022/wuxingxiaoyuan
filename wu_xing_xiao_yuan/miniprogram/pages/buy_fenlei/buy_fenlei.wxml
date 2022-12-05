@@ -8,7 +8,7 @@
 <view class="product">
 <view class="line"></view>
   <block wx:for="{{product}}" wx:key="_id">
-  <navigator class="product_1" url="../goodDetail/goodDetail?id={{item._id}}">
+  <navigator class="product_1" url="../product_detail/product_detail?id={{item._id}}">
     <image src="{{item.src[0]}}" class="img"></image>
     <view class="product_2">
       <text style="font-size:12px;">{{item.goodsName}}：￥{{item.price}}

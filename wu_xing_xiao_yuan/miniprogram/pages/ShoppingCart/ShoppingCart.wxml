@@ -1,2 +1,28 @@
-<!--pages/ShoppingCart/ShoppingCart.wxml-->
-<text>pages/ShoppingCart/ShoppingCart.wxml</text>
+<!-- 商品信息模块 -->
+<block wx:for="{{product}}" wx:key="_id">
+<view class="product_list">
+  <view class="product_list_1">
+    <!-- 选择框 负责传递商品id -->
+    <checkbox-group bindchange="xuanze" data-id="{{item._id}}">
+      <checkbox value="{{item._id}}" checked="{{item.product_checked}}"></checkbox>
+    </checkbox-group>
+    <view class="product_list_2">
+      <image src="{{item.product_src}}" style="width:100rpx;height:100rpx"></image>
+      <view class="product_list_3">
+        <view style="font-size:20px">{{item.product_name}}</view>
+        <view style="color:red">￥:{{item.product_price}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+</block>
+<!-- 功能按钮模块 -->
+<view class="anniu">
+  <button class="del" bindtap="delete" size="mini" type="warn" plain="true" >删除</button>
+  <view class="sum">
+    <view>合计:￥{{money}}</view>
+  </view>
+  <view class="pay" bindtap="pay">
+    <view style="color: white;">去结算</view>
+  </view>
+</view>
