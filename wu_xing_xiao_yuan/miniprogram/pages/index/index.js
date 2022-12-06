@@ -11,10 +11,6 @@ Page({
       id: 0,
       type: 'image',
       url: 'cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/swiper-photos/1.jpg'
-<<<<<<< HEAD
-      
-=======
->>>>>>> parent of c41962f (完善跳转路径)
     }, {
       id: 1,
         type: 'image',
@@ -37,14 +33,11 @@ Page({
      url: '../buy/buy',
    }) 
   },
-<<<<<<< HEAD
   changeweb2(){
     wx:wx.navigateTo({
       url: '../change/change',
     }) 
    },
-=======
->>>>>>> parent of c41962f (完善跳转路径)
   changeweb3(){
     wx:wx.navigateTo({
       url: '../donation/donation',

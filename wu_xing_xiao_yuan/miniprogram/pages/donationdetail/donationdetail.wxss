@@ -2,10 +2,10 @@
 /* 背景图的格式 */
 
 .background{
-  height: 240px;
+  height: 220px;
 }
 .background image{
-  height: 240px;
+  height: 220px;
   width: 390px;
 }
 
@@ -14,7 +14,8 @@
 }
 .imp text{
   font-size: 45rpx;
-  color: #87c38f;
+  color: black;
+  text-shadow: 3px 3px lightgray;
 }
 
 /* 五个小图标的格式 */
@@ -43,7 +44,8 @@
 
 .text1{
   font-size: 28px;
-  color: #87c38f
+  color: black;
+  text-shadow: 3px 3px lightgray;
 }
 
 .allselect{
@@ -56,19 +58,20 @@
   
 .lable{
   width:50%;
-  font-size:25px;
-  color: #434347;
+  font-size:22px;
+  color: #3D88C4;
+  text-shadow: 1px 1px lightgray;
   display: flex;
   flex-direction: column;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   }
 
   .activy{
-    padding-top: 340px;
+    padding-top: 240px;
     height: 240px;
   }
   .activy image{
-    height: 200px;
+    height: 180px;
     width: 390px;
   }
   

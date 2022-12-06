@@ -71,7 +71,8 @@ Page({
         day:this.data.selecttime[this.data.slelectedtime],
         time:this.data.selectArray[this.data.currenttime],
         address:this.data.addressArray[this.data.currentaddress],
-        weight:this.data.weightArray[this.data.currentweight]
+        weight:this.data.weightArray[this.data.currentweight],
+        lable:['全部','待取件']
       }
     }).then(res=>{console.log(res)})
   },

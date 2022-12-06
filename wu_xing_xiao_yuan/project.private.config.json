@@ -11,21 +11,21 @@
         },
         {
           "name": "",
-          "pathName": "pages/PersonalCenter/PersonalCenter",
+          "pathName": "pages/mydonation/mydonation",
           "query": "",
           "launchMode": "default",
           "scene": null
         },
         {
           "name": "",
-          "pathName": "pages/upload/upload",
+          "pathName": "pages/HomePage/HomePage",
           "query": "",
           "launchMode": "default",
           "scene": null
         },
         {
           "name": "",
-          "pathName": "pages/release/release",
+          "pathName": "pages/buy/buy",
           "query": "",
           "launchMode": "default",
           "scene": null

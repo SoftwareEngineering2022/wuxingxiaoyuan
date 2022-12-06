@@ -45,15 +45,15 @@
 <!-- 热门活动的四个图标 -->
 <view class="allbtn2">
 <view class="btnItem2">
-  <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/donationImg/IMG_1.jpg"></image>
+  <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/donationImg/IMG1.jpg"></image>
   </view>
   <view class="btnItem2">
-  <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/donationImg/IMG_2.jpg"></image>
+  <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/donationImg/IMG2.jpg"></image>
   </view>
   <view class="btnItem2">
-  <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/donationImg/IMG_3.jpg"></image>
+  <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/donationImg/IMG4.jpg"></image>
   </view>
   <view class="btnItem2">
-  <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/donationImg/IMG_4.jpg"></image>
+  <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/donationImg/IMG3.jpg"></image>
   </view>
 </view>

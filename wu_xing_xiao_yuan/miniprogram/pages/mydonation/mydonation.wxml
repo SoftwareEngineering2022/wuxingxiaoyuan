@@ -1,0 +1,29 @@
+<!--pages/mydonation/mydonation.wxml-->
+<!-- 页面首部的导航栏效果 -->
+<scroll-view scroll-x class="navbar" scroll-with-animation scroll-left="{{scrollLeft}}rpx">
+  <view class="nav-item" wx:for="{{tabs}}" wx:key="id" bindtap="tabSelect" data-id="{{index}}">
+    <view class="nav-text {{index==tabCur?'tab-on':''}}">{{item}}</view>
+  </view>
+</scroll-view>
+<!-- <view class="container"> -->
+
+<!-- 页面底部的数据渲染 -->
+<view class="donation_container" wx:for="{{donation_data}}">
+  <view class="donation_container_box">
+  <view class="donation_item_img">
+    <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/donationdetail_img/衣服,服装(mydonation).png"></image>
+  </view>
+  <view class="donation_item_text">
+    <text>旧衣回收: {{item.weight}}</text>
+    <text>回收时间：{{item.time}}</text>
+    <text>福利发放：64个校园币，10颗爱心</text>
+  </view>
+  <button class="btn1" size="mini" >炫耀一下</button>
+  <button class="btn2" size="mini">立即评价</button>
+</view>
+</view>
+
+
+
+ 
+

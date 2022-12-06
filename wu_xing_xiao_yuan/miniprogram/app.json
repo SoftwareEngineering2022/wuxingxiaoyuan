@@ -18,7 +18,8 @@
     "pages/myReplacementOrder/myReplacementOrder",
     "pages/concerning/concerning",
     "pages/donationdetail/donationdetail",
-    "pages/upload/upload"
+    "pages/upload/upload",
+    "pages/mydonation/mydonation"
   ],
   "window": {
     "backgroundTextStyle": "dark",

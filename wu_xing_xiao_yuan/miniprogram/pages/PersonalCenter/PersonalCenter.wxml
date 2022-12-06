@@ -49,6 +49,11 @@
             <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/image/PersonalCenter/next.png"></image>
         </view></navigator>
 
+        <navigator url="../mydonation/mydonation"><view class="me-about">
+            <text>我的捐赠</text>
+            <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/image/PersonalCenter/next.png"></image>
+        </view></navigator>
+
         <view class="me-about">
             <button open-type="contact" bindcontact="handleContact">联系客服</button>
             <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/image/PersonalCenter/next.png"></image>

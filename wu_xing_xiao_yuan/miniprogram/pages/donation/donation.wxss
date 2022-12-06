@@ -1,4 +1,5 @@
 /* pages/donation/donation.wxss */
+
 swiper{
   height:550rpx;
 }
@@ -51,25 +52,30 @@ swiper image{
 }
 .imp text{
   font-size: 45rpx;
-  color: gray;
+  color: black;
+  text-shadow: 3px 3px lightgray;
 }
 
 /* 热门活动的图标 */
 .allbtn2{
-  padding-top: 0rpx;
+  padding-top: 15rpx;
   display: flex;
   flex-wrap: wrap;
   
 }
 .btnItem2{
   margin-bottom: 0px;
-  width: 50%;
-  height: 140px;
+  width: 45%;
+  height: 110px;
   display: flex;
   flex-direction: column;
+  margin: 6px;
+  
   
 }
 .btnItem2 image{
-  width: 200px;
-  height: 120px;
+  width: 180px;
+  height: 100px;
+  border-radius: 12%;
+  box-shadow: 2px 2px lightgray;
 }

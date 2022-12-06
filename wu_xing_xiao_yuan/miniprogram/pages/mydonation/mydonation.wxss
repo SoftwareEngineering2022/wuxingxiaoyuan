@@ -1,0 +1,110 @@
+/* pages/mydonation/mydonation.wxss */
+.navbar {
+	width: 100%;
+	height: 90rpx;
+	/* 文本不换行 */
+	white-space: nowrap;
+	display: flex;
+	box-sizing: border-box;
+	border-bottom: 1rpx solid #eee;
+	background: #fff;
+	align-items: center;
+	/* 固定在顶部 */
+	position: static;
+	left: 0rpx;
+	top: 0rpx;
+}
+
+.nav-item {
+	padding-left: 25rpx;
+  padding-right: 25rpx;
+  width: 33.3%;
+	height: 100%;
+	display: inline-block;
+	/* 普通文字大小 */
+	font-size: 28rpx;
+}
+
+.nav-text {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	letter-spacing: 4rpx;
+	box-sizing: border-box;
+}
+
+.tab-on {
+	color: #87C38F;
+	/* 选中放大 */
+	font-size: 35rpx !important;
+	font-weight: 600;
+}
+
+.donation_container{
+  display: flex;
+  flex-wrap: wrap;
+}
+/* 设置每行的格式 */
+.donation_container_box{
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid lightgray;
+  width: 100%;
+  height: 130px;
+  background-color: white;
+  margin-bottom: 8px;
+}
+/* 设置图片的view以及图片的格式 */
+.donation_item_img{
+  width: 25%;
+  height: 100px;
+  box-sizing: border-box;
+}
+.donation_item_img image{
+  margin: 15px 10px 0px 10px;
+  width: 50px;
+  height: 50px;
+  padding-top: 1px;
+  line-height: 100px;
+}
+
+.donation_item_text {
+  width: 75%;
+  margin:12px 0px 0px 0px ;
+  height: 90px;
+}
+.donation_item_text text{
+  
+  display: block;
+  margin-bottom:8px;
+  font-size: 15px;
+  color: rgb(100, 100, 100);
+  text-shadow: 1px 0px lightgray;
+}
+
+
+
+.btn1{
+  
+  background-color: #71ca7e;
+  border-radius: 100rpx;
+  width: 60px;
+  color:black;
+  box-shadow: 1rpx 1rpx #828292;
+  position: relative;
+  top: -10px;
+  left: 140px;
+}
+.btn2{
+  
+  background-color: #f06745;
+  border-radius: 100rpx;
+  width: 60px;
+  color:black;
+  box-shadow: 1rpx 1rpx #828292;
+  position: relative;
+  top: -10px;
+  left: 40px;
+}
