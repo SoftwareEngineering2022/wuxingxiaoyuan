@@ -55,6 +55,7 @@
   height: 130px;
   background-color: white;
   margin-bottom: 8px;
+  border-radius: 5%;
 }
 /* 设置图片的view以及图片的格式 */
 .donation_item_img{
@@ -88,21 +89,32 @@
 
 .btn1{
   
-  background-color: #71ca7e;
-  border-radius: 100rpx;
-  width: 60px;
-  color:black;
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor:pointer;
+  color:#61666D;
+  
+  background-color: white;
+  
+ 
   box-shadow: 1rpx 1rpx #828292;
   position: relative;
   top: -10px;
-  left: 140px;
+  left: 120px;
 }
 .btn2{
-  
-  background-color: #f06745;
-  border-radius: 100rpx;
   width: 60px;
   color:black;
+  box-shadow: 1rpx 1rpx #828292;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  cursor:pointer;
+  color: white;
+  border:#D4D6D9 1px solid;
+  background-color:#00AEEC;
   box-shadow: 1rpx 1rpx #828292;
   position: relative;
   top: -10px;
