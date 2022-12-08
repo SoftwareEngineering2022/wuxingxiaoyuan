@@ -61,8 +61,8 @@ Page({
       if(this.data.openid.length!==0){
       db.collection('donationDetail').aggregate()
         .match({
-         lable: '待取件',
-         _openid:this.data.openid
+        _openid:this.data.openid,
+        lable: '待取件'
         })
         .end()
         .then(res => {
