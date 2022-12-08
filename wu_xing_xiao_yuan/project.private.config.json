@@ -43,11 +43,39 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/OrderForm/OrderForm",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/PersonalCenter/PersonalCenter",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/upload/upload",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/PersonalCenter/PersonalCenter",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }
   },
-  "projectname": "%E7%89%A9%E8%A1%8C%E6%A0%A1%E5%9B%AD%E7%BB%88%E6%9E%81",
+  "projectname": "wu_xing_xiao_yuan",
   "setting": {
     "compileHotReLoad": true
   }

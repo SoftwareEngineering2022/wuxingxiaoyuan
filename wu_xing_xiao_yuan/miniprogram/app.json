@@ -11,6 +11,7 @@
     "pages/product_detail/product_detail",
     "pages/message/message",
     "pages/ShoppingCart/ShoppingCart",
+    "pages/OrderForm/OrderForm",
     "pages/PersonalCenter/PersonalCenter",
     "pages/account/account",
     "pages/myPublish/myPublish",
@@ -49,9 +50,9 @@
       },
       {
         "pagePath": "pages/ShoppingCart/ShoppingCart",
-        "text": "购物车",
-        "iconPath": "/images/HomePage/gouwuche.png",
-        "selectedIconPath": "/images/HomePage/gouwuche-2.png"
+        "text": "收藏",
+        "iconPath": "/images/HomePage/shoucang.png",
+        "selectedIconPath": "/images/HomePage/shoucang-2.png"
       },
       {
         "pagePath": "pages/PersonalCenter/PersonalCenter",

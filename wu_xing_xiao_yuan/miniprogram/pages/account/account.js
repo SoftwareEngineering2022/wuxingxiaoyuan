@@ -1,65 +1,69 @@
 // miniprogram/pages/task/task.js
+const db=wx.cloud.database()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    headImg: "",
-    money: -1,
-    deposit: -1,
-    openId:"",
-    sum:0
+    nickName: "",
+    avatarUrl: "",
+    openid:"",
+    userinfo:[],
   },
 
-  async onShow() {
+  // async onShow() {
     
-    if(wx.getStorageSync('openId')!=""){
+  //   if(wx.getStorageSync('openId')!=""){
+  //     this.setData({
+  //       openId: wx.getStorageSync('openId').result.openid
+  //     });
+  //   }
+  //   var that = this;
+  //   const db = wx.cloud.database({ // 链接数据表
+  //     env: "cloud1-9gaunl0x483e6245"
+  //   });
+  //   db.collection('userInfo').where({ //数据查询
+  //     _openid: this.data.openId //条件
+  //   }).get({
+  //     success: function (res) {
+  //       console.log(res.data[0])
+  //       that.setData({
+  //         avatarUrl: res.data[0].avatarUrl
+  //       })
+  //     }
+  //   })
+
+  // },
+
+
+
+  getOpenid() {
+    wx.cloud.callFunction({
+     name: 'getOpenid',
+     complete: res => {
+      console.log('云函数获取到的openid: ', res)
+      var openid = res.result.openid;
       this.setData({
-        openId: wx.getStorageSync('openId').result.openid
+       openid: openid
       });
-    }
-
-    var that = this;
-    const db = wx.cloud.database({ // 链接数据表
-      env: "xgj1-056iz"
-    });
-    db.collection('user').where({ //数据查询
-      _openid: this.data.openId //条件
-    }).get({
-      success: function (res) {
-        that.setData({
-          headImg: res.data[0].headImg,
-          money: res.data[0].money,
-          deposit: res.data[0].deposit
+      db.collection('userInfo').aggregate()
+      .match({
+        _openid:this.data.openid
+      })
+      .end()
+      .then(res => {
+        console.log('个人信息获取成功', res)
+        this.setData({
+          userinfo:res.list[0],
+          nickName:res.list[0].nickName,
+          avatarUrl:res.list[0].avatarUrl,
         })
-      }
-    })
+      })
+     }
+    })},
 
-    wx.showLoading({
-      title: '数据加载中...',
-    });
-
-    let count = await db.collection('takeMoney').where({
-      _openid:this.data.openId
-    }).count()
-    count = count.total
-    this.setData({
-      sum: count
-    })
-    //通过for循环多次请求，并且把多次请求的数据放进同一个数组
-    let all = []
-    for (let i = 0; i < count; i += 20) {
-      let list = await db.collection('takeMoney').where({
-        _openid:this.data.openId
-      }).skip(i).get()
-      all = all.concat(list.data);
+    onLoad(options) {
+      this.getOpenid()
     }
-    this.setData({
-      arr: all.reverse()
-    })
-
-
-    wx.hideLoading();
-  },
 })

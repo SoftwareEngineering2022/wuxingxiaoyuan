@@ -1,0 +1,15 @@
+<!--pages/OrderForm/OrderForm.wxml-->
+
+
+<scroll-view scroll-x class="bg nav text-center nav">
+
+  <view class="cu-item {{0==TabCur?'text-black cur':''}}" bindtap="tabSelect" data-id="0">
+    <text >已付款</text> 
+  </view>
+  <view class="cu-item {{1==TabCur?'text-black cur':''}}" bindtap="tabSelect" data-id="1">
+    <text>交易中</text> 
+  </view>
+  <view class="cu-item {{2==TabCur?'text-black cur':''}}" bindtap="tabSelect" data-id="2">
+    <text >已完成</text> 
+  </view>
+</scroll-view>

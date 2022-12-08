@@ -1,2 +1,21 @@
 <!--pages/myPublish/myPublish.wxml-->
-<text>pages/myPublish/myPublish.wxml</text>
+
+<view wx:for="{{product}}" wx:key="_id" id="{{item._id}}" bindtap="toEdit">
+<view class="goods_list">
+  <!--选择框 负责传递商品id-->
+  <view class="goods_list_box" >
+    <image src="{{item.src[0]}}"></image>
+      <text class="goods_list2">{{item.goodsName}} </text>
+      <view class="cu-tag round bg-orange sm goods_btn" style="background-color:#9fc0ec; margin-left: 260rpx; height: 26px;">{{item.freshness}}</view>
+      <view class="cu-tag round bg-orange sm goods_btn" style="background-color:#87C38F; margin-left: 260rpx ; height: 26px;">{{item.tardingMethod}}</view>
+  </view>
+<!--商品价格-->
+<view>
+  <view class="goods_list3">￥{{item.price}}</view>
+</view>
+
+</view>
+</view>
+<!--商品信息模块-->
+
+

@@ -1,0 +1,4 @@
+/* pages/OrderForm/OrderForm.wxss */
+.nav{
+  background-color: rgb(220, 241, 200);
+}

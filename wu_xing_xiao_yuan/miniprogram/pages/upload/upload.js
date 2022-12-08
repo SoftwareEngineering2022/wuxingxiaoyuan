@@ -10,8 +10,38 @@ Page({
     img:[],
     showView: false,
     showView2: false,
+    openid:"",
+    userinfo:[],
   },
   /*显示隐藏内容*/
+
+  getOpenid() {
+    wx.cloud.callFunction({
+     name: 'getOpenid',
+     complete: res => {
+      console.log('云函数获取到的openid: ', res)
+      var openid = res.result.openid;
+      this.setData({
+       openid: openid
+      });
+      db.collection('userInfo').aggregate()
+      .match({
+        _openid:this.data.openid
+      })
+      .end()
+      .then(res => {
+        console.log('个人信息获取成功', res)
+        this.setData({
+          userinfo:res.list[0],
+          
+          
+        })
+      })
+     }
+    })},
+
+
+
 
 
   /*上传图片 */
@@ -33,7 +63,8 @@ Page({
           success: function(res){
             console.log(res.fileID)
             that.setData({
-              img:that.data.img.concat(res.fileID)
+              img:that.data.img.concat(res.fileID),
+             
             })
           },
           fail: function(res){
@@ -66,6 +97,7 @@ Page({
       })
       console.log(that.data.img)
     },
+
     submit:function(e){
       let that = this
       console.log(e)
@@ -80,6 +112,8 @@ Page({
             price:e.detail.value.price,
             info:e.detail.value.info,
             src:that.data.img,
+            nickName:that.data.userinfo.nickName,
+            avatarUrl:that.data.userinfo.avatarUrl,
 						// update_time: timeutil.TimeCode(new Date()),
             upload_time:db.serverDate(),
             // num:0
@@ -108,12 +142,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+    this.getOpenid()
     let that=this
     db.collection('fenlei').get({
       success:function(res){
         console.log('获取成功',res)
         that.setData({
-          fenlei:res.data
+          fenlei:res.data,
         })
       },fail:function(res){
         console.log('获取失败',res)
