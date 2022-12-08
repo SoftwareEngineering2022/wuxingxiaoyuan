@@ -36,6 +36,13 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/ShoppingCart/ShoppingCart",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }

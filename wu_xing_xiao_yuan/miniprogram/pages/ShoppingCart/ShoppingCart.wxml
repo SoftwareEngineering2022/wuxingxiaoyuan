@@ -1,28 +1,24 @@
 <!-- 商品信息模块 -->
 <block wx:for="{{product}}" wx:key="_id">
-<view class="product_list">
+<view class="product_list" >
   <view class="product_list_1">
     <!-- 选择框 负责传递商品id -->
     <checkbox-group bindchange="xuanze" data-id="{{item._id}}">
       <checkbox value="{{item._id}}" checked="{{item.product_checked}}"></checkbox>
     </checkbox-group>
-    <view class="product_list_2">
-      <image src="{{item.product_src}}" style="width:100rpx;height:100rpx"></image>
+    <navigator class="product_list_2" url="../product_detail/product_detail?id={{item.product_id}}">
+      <image src="{{item.product_src}}" style="width:250rpx;height:250rpx;border-radius: 20rpx;"></image>
       <view class="product_list_3">
-        <view style="font-size:20px">{{item.product_name}}</view>
-        <view style="color:red">￥:{{item.product_price}}</view>
+        <view class="name">{{item.product_name}}</view>
+        <view class="price">￥{{item.product_price}}</view>
+        <view><button class="want" size="mini">我想要</button></view>
       </view>
-    </view>
+    </navigator>
   </view>
 </view>
 </block>
 <!-- 功能按钮模块 -->
 <view class="anniu">
+  <view class="num">已选择：{{product_sum}}件</view>
   <button class="del" bindtap="delete" size="mini" type="warn" plain="true" >删除</button>
-  <view class="sum">
-    <view>合计:￥{{money}}</view>
-  </view>
-  <view class="pay" bindtap="pay">
-    <view style="color: white;">去结算</view>
-  </view>
 </view>

@@ -2,7 +2,7 @@ const db=wx.cloud.database()
 Page({
   data: {
     product:[],
-    money:0,
+    product_sum:0,
     product_now:[],
     product_id:[],
     delet_id:[]
@@ -30,17 +30,17 @@ pay:function(e){
     }
   })
 },
-// 计算金额
-get_money_sum() {
+// 计算选择的商品数量
+get_sum() {
   let that = this
-  let money_sum = 0
+  let sum = 0
   for(var x = 0;x<that.data.product.length;x++){
     if(that.data.product[x].product_checked == "true"){
-      money_sum=money_sum+(that.data.product[x].product_num*that.data.product[x].product_price)
+      sum=sum+1
     }
   }
   that.setData({
-    money:money_sum
+    product_sum:sum
   })
 },
 // 选择事件
@@ -62,7 +62,8 @@ xuanze:function(e){
     db.collection('shopping_cart').doc(e.target.dataset.id).update({
       data:{
         product_checked:""
-      },success:function(){
+      },
+      success:function(){
         that.onLoad()
       }
     })
@@ -73,13 +74,23 @@ delete:function(){
 let that = this
 wx.cloud.callFunction({
   name:"product_delet",
-  success:function(res){
+  complete: res => {
     console.log('删除商品成功',res)
+    wx.showModal({
+      title: '温馨提示',
+      content: '删除成功',
+      success(res) {},
+      fail(res){},
+      showCancel:false,
+      confirmText:"确定"
+      }),
     that.onLoad()
   },fail:function(res){
     console.log('删除商品失败',res)
   }
 })
+// 
+
 },
  /**
    * 生命周期函数--监听页面加载
@@ -92,7 +103,7 @@ wx.cloud.callFunction({
         that.setData({
           product:res.data,
         })
-        that.get_money_sum()
+        that.get_sum()
       },
       fail:function(res){
         console.log('获取购物车商品失败',res)

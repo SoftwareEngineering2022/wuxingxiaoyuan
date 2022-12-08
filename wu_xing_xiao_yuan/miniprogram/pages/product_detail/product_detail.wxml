@@ -29,11 +29,11 @@
   <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/button-img/分享.png"></image>
   <text>分享</text>
   </view>
-  <view class="btnItem">
+  <view class="btnItem" bindtap="into_shopping_cart">
   <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/button-img/关注.png"></image>
-  <text>喜欢</text>
+  <text>收藏</text>
   </view>
 </view>
 <button class="btn2" size="mini">和他聊聊</button>
-<button class="btn3" size="mini">立即购买</button>
+<button class="btn3" size="mini">立即下单</button>
 
