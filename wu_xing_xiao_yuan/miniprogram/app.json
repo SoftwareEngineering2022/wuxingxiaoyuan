@@ -10,7 +10,7 @@
     "pages/goodDetail/goodDetail",
     "pages/product_detail/product_detail",
     "pages/message/message",
-    "pages/ShoppingCart/ShoppingCart",
+    "pages/MyCollection/MyCollection",
     "pages/OrderForm/OrderForm",
     "pages/PersonalCenter/PersonalCenter",
     "pages/account/account",
@@ -49,7 +49,7 @@
         "selectedIconPath": "/images/HomePage/fabu-2.png"
       },
       {
-        "pagePath": "pages/ShoppingCart/ShoppingCart",
+        "pagePath": "pages/MyCollection/MyCollection",
         "text": "收藏",
         "iconPath": "/images/HomePage/shoucang.png",
         "selectedIconPath": "/images/HomePage/shoucang-2.png"

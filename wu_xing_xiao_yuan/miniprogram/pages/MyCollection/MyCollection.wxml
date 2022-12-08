@@ -20,5 +20,5 @@
 <!-- 功能按钮模块 -->
 <view class="anniu">
   <view class="num">已选择：{{product_sum}}件</view>
-  <button class="del" bindtap="delete" size="mini" type="warn" plain="true" >删除</button>
+  <button class="del" bindtap="delete" size="mini" type="warn" plain="true" >取消收藏</button>
 </view>
