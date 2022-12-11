@@ -38,7 +38,8 @@
     <image src="{{item.src[0]}}" class="img"></image>
     <view class="product_2">
       <view class="goodName1">{{item.goodsName}}：</view>
-      <view class="goodPrice" style="color:red,"><text style="font-size:18px; color: red;">￥{{item.price}}</text></view>
+      <view class="goodPrice" style="color:red," 
+      wx:if="{{item.price!==''}}"><text style="font-size:18px; color: red;">￥{{item.price}}</text></view>
       <view><text style="font-size:15px;font-weight: 200;">{{item.category}}</text></view>
     </view>
   </navigator>

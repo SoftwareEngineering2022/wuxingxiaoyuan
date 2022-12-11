@@ -22,7 +22,7 @@
   <view class="product_1">
     <view style="color:red">￥{{product_price}}</view>
     <view class="product_3">
-     <text class="txt">{{product_freshness}}</text>
+     <text class="txt">{{product_freshness}}成新</text>
     </view>
   </view>
   <view class="product_2" >{{product_detail}}</view>
