@@ -1,0 +1,72 @@
+/* pages/add_order/add_order.wxss */
+.buy_good{
+  width: 100%;
+  margin-top: 5px;
+}
+
+.ownerinfo{
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.ownerinfo-name{ 
+  margin: 20px 0px 0px 10px ;
+  font-size: 20px;
+}
+.product_list_context{
+  display: flex;
+  flex-direction: row;
+ 
+  background-color: white;
+  border-radius: 10%;
+  height: 180px;
+  padding-top: 30px;
+  padding-left: 15px;
+}
+.product_list_context > image{
+  margin-left: 10px;
+  width:250rpx;
+  height:220rpx;
+  border-radius: 20rpx;
+}
+
+.product_list_words{
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+ 
+}
+.name{
+  font-size:25px;
+  margin: 5px 0px 0px 25px ;
+}
+.price{
+  color:red;
+  font-size: 30px;
+  margin: 15px 0px 0px 20px;
+ 
+}
+.line{
+  width: 100%;
+  height: 5rpx;
+  background-color: rgb(136, 135, 135);
+  margin-bottom: 10rpx;
+}
+/* 按钮模块样式 */
+.anniu{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 0;
+  justify-content: space-between;
+  width: 100%;
+  height: 100rpx;
+  background-color: white;
+  align-items: center;
+} 
+
+.del{
+  margin-right: 20rpx;
+  background-color: rgb(235, 192, 151);
+}
+

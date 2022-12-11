@@ -1,0 +1,25 @@
+<!--pages/add_order/add_order.wxml-->
+
+ <view class="buy_good" >
+    <!-- 选择框 负责传递商品id -->
+<view class="ownerinfo">
+<image class="ownerinfo-Url" src="{{goods.avatarUrl}}" style="width:60px;height:60px;margin-left:10rpx;border-radius: 50%;"></image>
+<view class="ownerinfo-name">{{goods.user_name}}</view>
+</view>
+
+    <navigator class="product_list_context">
+      <image src="{{goods.product_src}}" ></image>
+      
+      <view class="product_list_words">
+        <view class="name">{{goods.product_name}}</view>
+        <view class="price">￥{{goods.product_price}}</view>
+      </view>
+
+    </navigator>
+  
+</view>
+
+<view class="anniu">
+ 
+  <button class="del" bindtap="" size="large"  >确认下单</button>
+</view>

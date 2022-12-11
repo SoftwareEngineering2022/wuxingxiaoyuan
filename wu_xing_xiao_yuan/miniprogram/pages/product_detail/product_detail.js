@@ -18,7 +18,50 @@ Page({
     user_name:"",
     id:""
   },
-  
+  // 提交订单
+submit_order:function(){
+  let that = this
+  wx.showLoading({
+    title: '提交中',
+  })
+  wx.hideLoading()
+  db.collection('order').where({
+    product_id: that.data.id
+  }).get({
+    success:function(res){
+      console.log(res)
+      if(res.data == ""){
+        db.collection('order').add({
+          data:{
+          product_name:that.data.product_name,
+          product_src:that.data.product_src[0],
+          product_price:that.data.product_price,
+          product_id:that.data.id,
+          user_name:that.data.user_name,
+          avatarUrl:that.data.user_head
+          },
+          success:function(res){
+            console.log('商品生成订单成功',res)
+            wx.navigateTo({
+              url: '../add_order/add_order',
+            })
+          },
+          fail:function(res){
+            console.log('商品生成订单失败',res)
+          }
+        })
+      }else{
+        wx.navigateTo({
+          url: '../add_order/add_order',
+        })
+      }
+    },
+    fail:function(res){
+      console.log(res)
+    }
+  })
+},
+
    // 加入购物车
    into_shopping_cart:function(){
     let that = this

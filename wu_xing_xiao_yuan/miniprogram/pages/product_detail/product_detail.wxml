@@ -47,7 +47,7 @@
 <!-- 购买/购买+置换按钮模块 -->
 <view wx:if="{{product_state[0]=='可购买'||product_state[1]=='可购买'}}">
 <view><button class="btn2" size="mini">和他聊聊</button></view>
-<view><button class="btn3" size="mini">立即下单</button></view>
+<view><button class="btn3" size="mini" bindtap="submit_order">立即下单</button></view>
 </view>
 <!-- 置换按钮模块 -->
 <view wx:if="{{product_state[0]=='可置换'&&product_state.length===1}}"><button class="btn4" size="default">和他聊聊</button></view>
