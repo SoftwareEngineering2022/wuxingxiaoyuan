@@ -15,13 +15,13 @@
 
 .goods_list2{
   display: flex;
-  margin-top: -200rpx;
-  font-size: 20px;
+  margin-top: -230rpx;
+  font-size: 19px;
   font-weight: 400;
   margin-left: 260rpx;
   color: rgb(114, 117, 146);
-  width:120rpx;
-  height:40px;
+  width:180rpx;
+  height:50px;
   overflow:hidden;
   text-overflow: ellipsis;
   display:-webkit-box;
