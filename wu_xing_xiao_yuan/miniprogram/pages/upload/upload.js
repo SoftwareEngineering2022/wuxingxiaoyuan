@@ -101,7 +101,7 @@ Page({
     submit:function(e){
       let that = this
       console.log(e)
-      if(e.detail.value.goodsName!=""&&e.detail.value.fenlei!=""&&e.detail.value.tardingMethod!=""){//&&e.detail.value.info!=""不允许不上传图片
+      if(e.detail.value.goodsName!=""&&e.detail.value.fenlei!=""&&e.detail.value.tardingMethod!=""&&e.detail.value.info!=""){//不允许不上传图片
         db.collection('goods').add({
           data:{
             goodsName:e.detail.value.goodsName,
@@ -116,7 +116,6 @@ Page({
             avatarUrl:that.data.userinfo.avatarUrl,
 						// update_time: timeutil.TimeCode(new Date()),
             upload_time:db.serverDate(),
-            // num:0
           },success:function(res){
             wx.showToast({
               title: '发布成功',
@@ -200,17 +199,28 @@ Page({
    */
   onUnload() {
     
-
   },
 
+  onRefresh(){
+    wx.showNavigationBarLoading()
+    //loading 提示框
+    wx.showLoading({
+      title: '小园正在努力中...',
+    })
+    //console.log("下拉刷新啦");
+    setTimeout(function () {
+      wx.hideLoading();
+      wx.hideNavigationBarLoading();
+      //停止下拉刷新
+      wx.stopPullDownRefresh();
+    }, 1000)
+  }, 
+  
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh() {
-    let that = this
-    wx.redirectTo({
-      url: '../upload/upload',
-    })
+    this.onRefresh()
   },
 
   /**
