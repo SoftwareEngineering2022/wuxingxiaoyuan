@@ -10,39 +10,102 @@
   </view>
 
 <!--商品类别-->
+<view class='title_text'>
+当前商品类别：{{category}} （您可以选择如下类别以修改）
+</view>
 
-  <view class='title'>
-    <view class='title_text'>
-      <radio-group name="fenlei">
-        <block wx:for="{{fenlei}}" wx:key="_id">
-        <radio style="margin-left: 20rpx; padding-top: 5rpx;" value="{{item.name}}"></radio>{{item.name}}
-      </block>
-      </radio-group>
-    </view>
-  </view>
+<view wx:if="{{ category === '食品'}}">
+    <radio-group name="fenlei">
+      <radio style="margin-left: 20rpx; padding-top: 5rpx;" value="食品" checked="true">
+			</radio> 	食品<radio style="margin-left: 20rpx; padding-top: 5rpx;" value="美妆">
+			</radio> 	美妆<radio style="margin-left: 20rpx; padding-top: 5rpx;" value="文具">
+			</radio> 	文具<radio style="margin-left: 20rpx; padding-top: 5rpx;" value="生活用品">
+			</radio> 	生活用品<radio style="margin-left: 20rpx; padding-top: 5rpx;" value="其它">
+			</radio> 	其它
+		</radio-group>
+</view>
+
+<view wx:if="{{ category === '美妆'}}">
+    <radio-group name="fenlei">
+      <radio style="margin-left: 20rpx; padding-top: 5rpx;" value="食品">
+			</radio> 	食品<radio style="margin-left: 20rpx; padding-top: 5rpx;" value="美妆" checked="true">
+			</radio> 	美妆<radio style="margin-left: 20rpx; padding-top: 5rpx;" value="文具">
+			</radio> 	文具<radio style="margin-left: 20rpx; padding-top: 5rpx;" value="生活用品">
+			</radio> 	生活用品<radio style="margin-left: 20rpx; padding-top: 5rpx;" value="其它">
+			</radio> 	其它
+		</radio-group>
+</view>
+
+<view wx:if="{{ category === '文具'}}">
+    <radio-group name="fenlei">
+      <radio style="margin-left: 20rpx; padding-top: 5rpx;" value="食品">
+			</radio> 	食品<radio style="margin-left: 20rpx; padding-top: 5rpx;" value="美妆">
+			</radio> 	美妆<radio style="margin-left: 20rpx; padding-top: 5rpx;" value="文具" checked="true">
+			</radio> 	文具<radio style="margin-left: 20rpx; padding-top: 5rpx;" value="生活用品">
+			</radio> 	生活用品<radio style="margin-left: 20rpx; padding-top: 5rpx;" value="其它">
+			</radio> 	其它
+		</radio-group>
+</view>
+
+<view wx:if="{{ category === '生活用品'}}">
+    <radio-group name="fenlei">
+      <radio style="margin-left: 20rpx; padding-top: 5rpx;" value="食品">
+			</radio> 	食品<radio style="margin-left: 20rpx; padding-top: 5rpx;" value="美妆">
+			</radio> 	美妆<radio style="margin-left: 20rpx; padding-top: 5rpx;" value="文具">
+			</radio> 	文具<radio style="margin-left: 20rpx; padding-top: 5rpx;" value="生活用品" checked="true">
+			</radio> 	生活用品<radio style="margin-left: 20rpx; padding-top: 5rpx;" value="其它">
+			</radio> 	其它
+		</radio-group>
+</view>
+
+<view wx:if="{{ category === '其它'}}">
+    <radio-group name="fenlei">
+      <radio style="margin-left: 20rpx; padding-top: 5rpx;" value="食品">
+			</radio> 	食品<radio style="margin-left: 20rpx; padding-top: 5rpx;" value="美妆" >
+			</radio> 	美妆<radio style="margin-left: 20rpx; padding-top: 5rpx;" value="文具">
+			</radio> 	文具<radio style="margin-left: 20rpx; padding-top: 5rpx;" value="生活用品">
+			</radio> 	生活用品<radio style="margin-left: 20rpx; padding-top: 5rpx;" value="其它" checked="true">
+			</radio> 	其它
+		</radio-group>
+</view>
+
 
 <!--商品使用程度-->
-<view class='title' style="padding-top: 20rpx;">
-  <view class="title_text">商品新旧程度</view>
+<view style="padding-top: 20rpx;">
+  <view class="title_text">当前商品新旧程度（拖动滑动条以修改）</view>
   <view class="section section_gap">
     <slider name="freshness" number="20" max="10" show-value value="{{freshness}}"/>
   </view>
 </view>
-
 </view>
 
 
-<view class='info-point'>
+<view  class='info-point'>
 <!--商品交易方式-->
-    <view class='title_text'>
+    <view wx:if="{{tardingMethod.length === 2}}" class='title_text'>
         <text>交易方式</text>
         <checkbox-group name="tardingMethod" style="margin-left: 50rpx;">
-        <checkbox value="可置换" bindtap="onChangeShowState2" ></checkbox>可置换<checkbox name="checkbox2" style="margin-left: 20rpx;" value="可购买" bindtap="onChangeShowState"></checkbox>可购买
+        <checkbox value="可置换" checked="true"></checkbox>可置换<checkbox name="checkbox2" checked="true" style="margin-left: 20rpx;" value="可购买" ></checkbox>可购买
         </checkbox-group>
   </view>
 
+	<view wx:if="{{tardingMethod[0] === '可置换'&& tardingMethod.length === 1}}" class='title_text'>
+        <text>交易方式</text>
+        <checkbox-group name="tardingMethod" style="margin-left: 50rpx;">
+        <checkbox value="可置换" checked="true"></checkbox>可置换<checkbox name="checkbox2" style="margin-left: 20rpx;" value="可购买" ></checkbox>可购买
+        </checkbox-group>
+  </view>
+
+	<view wx:if="{{tardingMethod[0] === '可购买'&& tardingMethod.length === 1}}" class='title_text'>
+        <text>交易方式</text>
+        <checkbox-group name="tardingMethod" style="margin-left: 50rpx;">
+        <checkbox value="可置换"></checkbox>可置换<checkbox name="checkbox2" checked="true" style="margin-left: 20rpx;" value="可购买" ></checkbox>可购买
+        </checkbox-group>
+  </view>
+
+
     <!--想置换的商品-->
-    <view wx:if="[tardingMethod].indexOf('可置换')">
+    <view >
     <view class='title_text'>
       <text>置换意向</text>
       <input value="{{substitutionIntent}}" name="substitutionIntent" placeholder="您可以在这里输入您想换到的商品"></input>
@@ -50,7 +113,7 @@
   </view>
 
   <!--商品价格-->
-  <view wx:if="[tardingMethod].indexOf('可置换')">
+  <view>
     <view class='title_text'>
       <text>商品价格</text>
       <input name="price" type='number' value="{{price}}" placeholder="默认单位为元，您只需输入数字"></input>
@@ -66,6 +129,7 @@
   </view>
 </view>
 
+
   <!--上传图片-->
 <view class="up">
   <scroll-view scroll-y="true">
@@ -75,6 +139,14 @@
   </block>
   </scroll-view>
   <button class="addImg" bindtap="upload_img">添加图片</button>
+
+
 </view>
-  <button form-type='submit' class='sureRelease'>确认发布</button>
+
+  <button form-type='submit' class='sureRelease'>确认修改</button>
+  <button style="background-color: rgb(230, 53, 88);margin-top: 5rpx;" bindtap="deletegoods">删除商品</button>
 </form>
+
+
+
+

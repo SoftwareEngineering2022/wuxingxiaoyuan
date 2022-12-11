@@ -104,7 +104,7 @@ Page({
           data:{
             goodsName:e.detail.value.goodsName,
             category:e.detail.value.fenlei,
-            freshness:e.detail.value.freshness+'成新',
+            freshness:e.detail.value.freshness,
             tardingMethod:e.detail.value.tardingMethod,
             substitutionIntent:e.detail.value.substitutionIntent,
             price:e.detail.value.price,

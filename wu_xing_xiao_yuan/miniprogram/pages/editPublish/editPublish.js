@@ -7,6 +7,8 @@ Page({
    * 页面的初始数据
    */
   data: {
+		chek:[false,false,false,false,false],
+		leibie:['食品','美妆','文具','生活用品','其它'],
     fenlei:[],
     img:[],
     id:"",
@@ -21,10 +23,48 @@ Page({
     info:"",
     img:[]    
   },
-  /*显示隐藏内容*/
+	/*显示隐藏内容*/
+	// checkboxChange(e) {
+  //   console.log('checkbox发生change事件，携带value值为：', e.detail.value)
+  //   const items = this.data.items
+  //   const values = e.detail.value
+  //   for (let i = 0, lenI = items.length; i < lenI; ++i) {
+  //     items[i].checked = false
+  //     for (let j = 0, lenJ = values.length; j < lenJ; ++j) {
+  //       if (items[i].value === values[j]) {
+  //         items[i].checked = true
+  //         break
+  //       }
+  //     }
+  //   }
+	// },
 
-
-  /*上传图片 */
+	deletegoods:function(e){
+		let that = this
+		db.collection('goods').doc(that.data.id).remove({
+			success:function(res){
+				console.log('删除成功','res.data')
+				wx.cloud.deleteFile({
+					fileList: that.data.img,
+					success:function(res){
+						wx.showToast({
+								title: '删除成功',
+							 success:function(res){
+									setTimeout(function () {
+							wx.redirectTo({
+							url: '../myPublish/myPublish',
+							})
+						 }, 1000)
+					 }
+				 })
+			 },
+					fail:err=>{
+					},
+				})
+			}
+		})
+	},
+	
   upload_img:function(){
     let that = this
     wx.chooseImage({
@@ -49,7 +89,10 @@ Page({
           fail: function(res){
             //handle error
           }
-        })
+				})
+				wx.redirectTo({
+					url: '../myPublish/myPublish',
+					})
       }
     })
   },
@@ -84,10 +127,10 @@ Page({
           data:{
             goodsName:e.detail.value.goodsName,
             category:e.detail.value.fenlei,
-            freshness:e.detail.value.freshness+'成新',
+            freshness:e.detail.value.freshness,
             tardingMethod:e.detail.value.tardingMethod,
             substitutionIntent:e.detail.value.substitutionIntent,
-            price:e.detail.value.price+'元',
+            price:e.detail.value.price,
             info:e.detail.value.info,
             src:that.data.img,
 						// update_time: timeutil.TimeCode(new Date()),
@@ -95,7 +138,7 @@ Page({
             // num:0
           },success:function(res){
            wx.showToast({
-               title: '发布成功',
+               title: '修改成功',
               success:function(res){
                  setTimeout(function () {
              wx.redirectTo({
@@ -112,7 +155,8 @@ Page({
           icon:"none"
         })
       }
-    },
+		},
+	
 
 
   /**
@@ -128,7 +172,7 @@ Page({
         console.log('获取成功',res)
         that.setData({
           fenlei:res.data
-        })
+				})
       },fail:function(res){
         console.log('获取失败',res)
       }
@@ -140,20 +184,22 @@ Page({
           goodsName:res.data.goodsName,
           category:res.data.category,
           freshness:res.data.freshness,
-          tardingMethod:res.data.freshness,
+          tardingMethod:res.data.tardingMethod,
           substitutionIntent:res.data.substitutionIntent,
           price:res.data.price,
           info:res.data.info,
           img:res.data.src
-        })
+				})
+		
       },
       fail:function (res) {
         console.log('信息获取失败',res)
       }
-    })
+		})
     showView: (options.showView == "true" ? true : false)
-    showView2: (options.showView2 == "true" ? true : false)
-  },
+		showView2: (options.showView2 == "true" ? true : false)
+		
+	},
   onChangeShowState: function () {
     var that = this;
     that.setData({
@@ -165,7 +211,23 @@ Page({
     that.setData({
      showView2: (!that.data.showView2)
     })
-   },
+	 },
+	 
+  //  deletegoods1(){
+  //   wx.showModal({
+  //     title: '提示',
+  //     content: '确定要删除该商品吗？',
+  //     success (res) {
+  //       if (res.confirm) {
+	// 				console.log('用户点击确定'),
+	// 				that.deletegoods()
+  //       } else if (res.cancel) {
+  //         console.log('用户点击取消')
+  //       }
+  //     }
+	// 	})
+  // },
+
 
   
  

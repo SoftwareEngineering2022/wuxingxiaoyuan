@@ -9,13 +9,13 @@
 } 
 
 .goods_list_box image{
-  width: 120px;
-  height: 115px;
+  width: 110px;
+  height: 110px;
 }
 
 .goods_list2{
   display: flex;
-  margin-top: -230rpx;
+  margin-top: -220rpx;
   font-size: 19px;
   font-weight: 400;
   margin-left: 260rpx;
@@ -32,14 +32,16 @@
 .goods_btn{
   margin-bottom: 5px;
 }
-.goods_list3{
+.goods_list .goods_list3{
+	position: absolute;
+	right: 25rpx;
+	margin-right: 5px;
   height: 35px;
   display: flex;
-  margin-top: 20rpx;
   color: rgb(248, 70, 0);
   font-size:40rpx;
   font-weight: 200;
-  text-shadow: 1px 1px 1px lightgray;
+	text-shadow: 1px 1px 1px lightgray;
 }
 
 .goods_list4{

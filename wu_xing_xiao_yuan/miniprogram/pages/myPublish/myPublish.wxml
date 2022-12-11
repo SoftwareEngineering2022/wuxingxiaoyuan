@@ -4,13 +4,15 @@
 <view class="goods_list">
   <!--选择框 负责传递商品id-->
   <view class="goods_list_box" >
-    <image src="{{item.src[0]}}"></image>
+    <image src="{{item.src[0]}}" mode="aspectFill"></image>
       <text class="goods_list2">{{item.goodsName}} </text>
-      <view class="cu-tag round bg-orange sm goods_btn" style="background-color:#9fc0ec; margin-left: 260rpx; height: 23px;">{{item.freshness}}</view>
-      <view class="cu-tag round bg-orange sm goods_btn" style="background-color:#87C38F; margin-left: 260rpx ; height: 23px;">{{item.tardingMethod}}</view>
+			<view style="margin-left: 260rpx; margin-top: 20rpx;" >
+      <view class="cu-tag round bg-orange sm goods_btn" style="background-color:#9fc0ec;  height: 24px;">{{item.freshness}}成新</view>
+      <view class="cu-tag round bg-orange sm goods_btn" style="background-color:#87C38F;  height: 24px;">{{item.tardingMethod}}</view>
+		</view>
   </view>
 <!--商品价格-->
-<view>
+<view  wx:if="{{item.price !== ''}}">
   <view class="goods_list3">￥{{item.price}}</view>
 </view>
 
