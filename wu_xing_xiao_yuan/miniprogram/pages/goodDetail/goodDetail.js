@@ -21,13 +21,13 @@ Page({
    // 加入购物车
    into_shopping_cart:function(){
     let that = this
-    db.collection('shopping_cart').where({
+    db.collection('collection').where({
       product_id: that.data.id
     }).get({
       success:function(res){
         console.log(res)
         if(res.data == ""){
-          db.collection('shopping_cart').add({
+          db.collection('collection').add({
             data:{
             product_name:that.data.product_name,
             product_src:that.data.product_src[0],
@@ -36,13 +36,13 @@ Page({
             product_checked:""    
             },
             success:function(res){
-              console.log('商品加入购物车成功',res)
+              console.log('商品加入收藏夹成功',res)
               wx.showToast({
                 title: '加入成功',
               })
             },
             fail:function(res){
-              console.log('商品加入购物车失败',res)
+              console.log('商品加入收藏夹失败',res)
             }
           })
         }else{
@@ -60,13 +60,13 @@ Page({
   // 立即购买
   buy:function(){
     let that = this
-    db.collection('shopping_cart').where({
+    db.collection('collection').where({
       product_id: that.data.id
     }).get({
       success:function(res){
         console.log(res)
         if(res.data == ""){
-          db.collection('shopping_cart').add({
+          db.collection('collection').add({
             data:{
             product_name:that.data.product_name,
             product_src:that.data.product_src[0],
@@ -75,18 +75,18 @@ Page({
             product_checked:"" 
             },
             success:function(res){
-              console.log('商品加入购物车成功',res)
+              console.log('商品加入收藏夹成功',res)
               wx.switchTab({
-                url: '../shopping_cart/shopping_cart',
+                url: '../MyCollection/MyCollection',
               })
             },
             fail:function(res){
-              console.log('商品加入购物车失败',res)
+              console.log('商品加入收藏夹失败',res)
             }
           })
         }else{
           wx.switchTab({
-            url: '../shopping_cart/shopping_cart',
+            url: '../MyCollection/MyCollection',
           })
         }
       },

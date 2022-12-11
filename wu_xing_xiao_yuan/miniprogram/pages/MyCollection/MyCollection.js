@@ -6,11 +6,12 @@ Page({
     product_now:[],
     product_id:[],
     delet_id:[]
+
   },
 // 支付事件
 pay:function(e){
   let that = this
-  db.collection('shopping_cart').where({
+  db.collection('collection').where({
     product_checked:"true"
   }).get({
     success:function(res){
@@ -51,7 +52,7 @@ xuanze:function(e){
     delet_id:that.data.delet_id.concat(e.detail.value[0])
   })
   if(e.detail.value.length !== 0){
-    db.collection('shopping_cart').doc(e.target.dataset.id).update({
+    db.collection('collection').doc(e.target.dataset.id).update({
       data:{
         product_checked:"true"
       },success:function(res){
@@ -59,7 +60,7 @@ xuanze:function(e){
       }
     })
   }else{
-    db.collection('shopping_cart').doc(e.target.dataset.id).update({
+    db.collection('collection').doc(e.target.dataset.id).update({
       data:{
         product_checked:""
       },
@@ -97,16 +98,16 @@ wx.cloud.callFunction({
    */
   onLoad: function (options){
     let that = this
-    db.collection('shopping_cart').get({
+    db.collection('collection').get({
       success:function(res){
-        console.log('获取购物车商品成功',res)
+        console.log('获取收藏夹商品成功',res)
         that.setData({
           product:res.data,
         })
         that.get_sum()
       },
       fail:function(res){
-        console.log('获取购物车商品失败',res)
+        console.log('获取收藏夹商品失败',res)
       }
     })
   },
@@ -121,15 +122,15 @@ wx.cloud.callFunction({
    */
   onShow: function () {
     let that = this
-    db.collection('shopping_cart').get({
+    db.collection('collection').get({
       success:function(res){
-        console.log('获取购物车商品成功',res)
+        console.log('获取收藏夹商品成功',res)
         that.setData({
           product:res.data,
         })
         that.get_money_sum()
       },fail:function(res){
-        console.log('获取购物车商品失败',res)
+        console.log('获取收藏夹商品失败',res)
       }
     })
   },

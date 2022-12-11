@@ -9,7 +9,7 @@ const _ = db.command
 exports.main = async (event, context) => {
   const ap = cloud.getWXContext()
   try {
-    return await db.collection('shopping_cart').where({
+    return await db.collection('collection').where({
       _openid:ap.OPENID,
       product_checked: "true"
     }).remove()
