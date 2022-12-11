@@ -7,26 +7,26 @@
    </swiper-item>
   </swiper>
 </view>
-<!-- 产品信息 -->
+<!-- 用户信息 -->
 <view class="userinfo">
   <view class="userinfo-box">
-  <view class="userinfo-img"><image src="{{user_head}}" style="width:30px;height:30px;margin-left:10rpx;border-radius: 50%;"></image></view>
-  <view class="userinfo-name">{{user_name}}</view>
+  <view class="userinfo-img"><image src="{{user_head}}" style="width:35px;height:35px;margin-left:10rpx;border-radius: 50%;"></image></view>
+  <view class="userinfo-name" style="font-size: 30rpx;">{{user_name}}</view>
   </view>
   </view>
- 
+ <!-- 产品信息 -->
 <view class="product">
   <view class="userinfo-priductname">
-  <text>{{product_name}}:</text>
+  <text style="font-size:50rpx">{{product_name}}:</text>
   </view>
   <view class="product_1">
-    <view style="color:red">￥{{product_price}}</view>
+    <view wx:if="{{product_state[0]=='可购买'||product_state[1]=='可购买'}}" style="color:red">￥{{product_price}}</view>
     <view class="product_3">
      <text class="txt">{{product_freshness}}成新</text>
     </view>
   </view>
   <view class="product_2" >{{product_detail}}</view>
-  <view class="sub">TA的置换意向：{{product_sub}}</view>
+  <view class="sub" wx:if="{{product_state[0]=='可置换'||product_state[1]=='可置换'}}">TA的置换意向：{{product_sub}}</view>
   
 </view>
 <!-- 按钮模块 -->

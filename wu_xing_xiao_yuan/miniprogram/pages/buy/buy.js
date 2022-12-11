@@ -19,6 +19,13 @@ Page({
   search:function(e){
     let key = e.detail.value
     let that = this
+    if(that.data.search == ""){
+      wx.showToast({
+        title: '未找到商品',
+        icon:"none"
+      })
+    }
+    else({})
     db.collection('goods').where({
       goodsName:db.RegExp({
         regexp: '.*' + key,
@@ -30,13 +37,7 @@ Page({
         that.setData({
           search:res.data
         })
-        console.log('搜索成功',that.data.search)
-        if(that.data.search == ""){
-          wx.showToast({
-            title: '未找到商品',
-            icon:"none"
-          })
-        }
+        console.log('搜索成功',that.data.search)     
       },
       fail:function(res){
         console.log('搜索失败',res)

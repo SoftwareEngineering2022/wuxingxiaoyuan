@@ -37,7 +37,7 @@
   margin-left: 10rpx;
 }
 .sub{
-  color:rgb(141, 141, 141);
+  color:#f0ab45;
   display: flex;
   font-size: 18px;
   margin-left: 10rpx;
@@ -74,6 +74,7 @@
   flex-wrap: wrap;
   white-space: wrap;
   padding-left: 5px;
+  font-size: 50rpx;
   /* text-overflow: ellipsis; */
   font-size: 20px;
 }

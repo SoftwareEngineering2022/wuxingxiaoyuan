@@ -32,7 +32,7 @@ Page({
   onLoad: function (options) {
     let that = this
     that.setData({
-      name:options.name
+      name:options
     })
     db.collection('goods').orderBy('upload_time','desc').where({
       category:options.name,
@@ -51,7 +51,9 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    wx.setNavigationBarTitle({
+      title: this.data.name.name,
+    })
   },
 
   /**

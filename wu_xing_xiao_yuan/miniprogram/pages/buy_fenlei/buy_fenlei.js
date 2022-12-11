@@ -1,4 +1,5 @@
-const db = wx.cloud.database()
+const db = wx.cloud.database();
+
 Page({
 
   /**
@@ -52,8 +53,10 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
-  },
+    wx.setNavigationBarTitle({
+      title: this.data.name,
+    })
+        },
 
   /**
    * 生命周期函数--监听页面显示

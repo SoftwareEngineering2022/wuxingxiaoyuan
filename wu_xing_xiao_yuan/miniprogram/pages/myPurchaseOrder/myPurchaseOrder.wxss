@@ -1,1 +1,4 @@
 /* pages/myPurchaseOrder/myPurchaseOrder.wxss */
+.nav{
+  background-color: rgb(220, 241, 200);
+}

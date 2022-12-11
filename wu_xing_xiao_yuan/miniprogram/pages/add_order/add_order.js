@@ -31,6 +31,11 @@ pay:function(e){
     }
   })
 },
+changeto(){
+  wx.navigateTo({
+    url: '../myPurchaseOrder/myPurchaseOrder',
+  })
+},
 
 
 

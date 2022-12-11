@@ -7,7 +7,7 @@
 <view class="ownerinfo-name">{{goods.user_name}}</view>
 </view>
 
-    <navigator class="product_list_context">
+    <navigator class="product_list_context" url="../product_detail/product_detail?id={{goods.product_id}}">
       <image src="{{goods.product_src}}" ></image>
       
       <view class="product_list_words">
@@ -21,5 +21,5 @@
 
 <view class="anniu">
  
-  <button class="del" bindtap="" size="large"  >确认下单</button>
+  <button class="del" bindtap="changeto" size="large"  >确认下单</button>
 </view>

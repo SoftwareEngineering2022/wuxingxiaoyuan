@@ -7,7 +7,8 @@
       <checkbox value="{{item._id}}" checked="{{item.product_checked}}"></checkbox>
     </checkbox-group>
     <navigator class="product_list_2" url="../product_detail/product_detail?id={{item.product_id}}">
-      <image src="{{item.product_src}}" style="width:250rpx;height:250rpx;border-radius: 20rpx;"></image>
+      <view class="pic"><image class="pic1" src="{{item.product_src}}" style="border-radius: 20rpx;"></image>
+      </view>
       <view class="product_list_3">
         <view class="name">{{item.product_name}}</view>
         <view class="price">￥{{item.product_price}}</view>

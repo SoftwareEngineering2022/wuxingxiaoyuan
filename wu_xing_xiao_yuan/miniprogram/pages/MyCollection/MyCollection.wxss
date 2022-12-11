@@ -41,6 +41,17 @@
   background-color: rgb(136, 135, 135);
   margin-bottom: 10rpx;
 }
+
+.pic{
+  width:250rpx;
+  height:250rpx;
+  border-radius: 20rpx;
+}
+.pic1{
+  width: 100%;
+  height:100%;
+  border-radius: 20rpx;
+}
 /* 按钮模块样式 */
 .anniu{
   display: flex;
