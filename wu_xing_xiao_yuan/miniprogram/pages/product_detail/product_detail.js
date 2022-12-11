@@ -13,6 +13,8 @@ Page({
     product_checked:"",
     product_freshness:"",
     product_sub:"",
+    user_head:"",
+    user_name:"",
     id:""
   },
 
@@ -109,6 +111,8 @@ Page({
           product_detail:res.data.info,
           product_freshness:res.data.freshness,
           product_sub:res.data.substitutionIntent,
+          user_head:res.data.avatarUrl,
+          user_name:res.data.nickName,
           id:res.data._id 
         })
       },

@@ -32,14 +32,7 @@
         },
         {
           "name": "",
-          "pathName": "pages/donationdetail/donationdetail",
-          "query": "",
-          "launchMode": "default",
-          "scene": null
-        },
-        {
-          "name": "",
-          "pathName": "pages/ShoppingCart/ShoppingCart",
+          "pathName": "pages/product_detail/product_detail",
           "query": "",
           "launchMode": "default",
           "scene": null
