@@ -60,3 +60,16 @@
   margin-right:100rpx ;
   /* margin-right: 10rpx; */
 }
+.goodName{
+  width: 60%;
+  text-overflow: ellipsis;
+  overflow:hidden;
+  white-space:nowrap;
+  font-size:15px;
+  display:webkit-box;
+}
+
+.goodPrice{
+  margin-right: 45rpx;
+}
+

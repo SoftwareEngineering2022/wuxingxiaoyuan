@@ -11,9 +11,9 @@
   <navigator class="product_1" url="../product_detail/product_detail?id={{item._id}}">
     <image src="{{item.src[0]}}" class="img"></image>
     <view class="product_2">
-      <text style="font-size:12px;">{{item.goodsName}}：￥{{item.price}}
-      </text>
-      <text style="font-size:12px;font-weight: 200;">{{item.category}}</text>
+      <view class="goodName">{{item.goodsName}}：</view>
+      <view class="goodPrice" style="color:red,"><text style="font-size:18px; color: red;">￥{{item.price}}</text></view>
+      <view><text style="font-size:15px;font-weight: 200;">{{item.category}}</text></view>
     </view>
   </navigator>
   </block>

@@ -7,7 +7,7 @@
 <view class="list" wx:for="{{search}}" wx:key="_id">
   <navigator class="list_1" url="../product_detail/product_detail?id={{item._id}}">
     <image src="{{item.src[0]}}" style="width:100rpx;height:100rpx;margin-left: 10rpx;"></image>
-    <view>商品：{{item.goodsName}}</view>
+    <view class="goodName1">{{item.goodsName}}</view>
     <view style="margin-right: 50rpx;">价格：￥{{item.price}}</view>
   </navigator>
   <view class="line"></view>
@@ -36,8 +36,8 @@
   <navigator class="product_1" url="../product_detail/product_detail?id={{item._id}}">
     <image src="{{item.src[0]}}" class="img"></image>
     <view class="product_2">
-      <view><text style="font-size:15px;">{{item.goodsName}}：</text></view>
-      <view><text style="font-size:15px;">￥{{item.price}}</text></view>
+      <view class="goodName">{{item.goodsName}}：</view>
+      <view class="goodPrice" style="color:red,"><text style="font-size:18px; color: red;">￥{{item.price}}</text></view>
       <view><text style="font-size:15px;font-weight: 200;">{{item.category}}</text></view>
       <!-- <text style="font-size:15px;font-weight: 200;">磨损程度：{{item.freshness}}</text> -->
     </view>

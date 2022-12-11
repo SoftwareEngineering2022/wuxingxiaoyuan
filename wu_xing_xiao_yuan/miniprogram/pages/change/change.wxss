@@ -116,3 +116,22 @@
   margin-bottom: 30rpx;
   box-shadow:0rpx 2rpx 3rpx 3rpx #c8c3c3;
 }
+.goodName{
+  width: 60%;
+  text-overflow: ellipsis;
+  overflow:hidden;
+  white-space:nowrap;
+  font-size:15px;
+  display:webkit-box;
+}
+.goodName1{
+  width: 50%;
+  text-overflow: ellipsis;
+  overflow:hidden;
+  white-space:nowrap;
+  font-size:15px;
+  display:webkit-box;
+}
+.goodPrice{
+  margin-right: 45rpx;
+}
