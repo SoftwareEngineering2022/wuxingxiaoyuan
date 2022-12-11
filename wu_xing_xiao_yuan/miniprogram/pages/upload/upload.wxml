@@ -23,7 +23,7 @@
 
 <!--商品使用程度-->
 <view class='title' style="padding-top: 20rpx;">
-  <view class="title_text">商品新旧程度</view>
+  <view class="title_text" style="font-size: 33rpx;">商品新旧程度</view>
   <view class="section section_gap">
     <slider name="freshness" number="20" max="10" show-value/>
   </view>
