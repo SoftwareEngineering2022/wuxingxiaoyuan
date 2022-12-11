@@ -9,12 +9,17 @@
 </view>
 <!-- 产品信息 -->
 <view class="userinfo">
+  <view class="userinfo-box">
   <view class="userinfo-img"><image src="{{user_head}}" style="width:30px;height:30px;margin-left:10rpx;border-radius: 50%;"></image></view>
   <view class="userinfo-name">{{user_name}}</view>
   </view>
+  </view>
+ 
 <view class="product">
+  <view class="userinfo-priductname">
+  <text>{{product_name}}:</text>
+  </view>
   <view class="product_1">
-    <view>{{product_name}}:</view>
     <view style="color:red">￥{{product_price}}</view>
     <view class="product_3">
      <text class="txt">{{product_freshness}}</text>
