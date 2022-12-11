@@ -20,11 +20,11 @@
             <image  src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/image/PersonalCenter/next.png"></image>
         </view>
 
+        <navigator url="../update_info/update_info?name={{nickName}}&openid={{openid}}">
         <view class="me-about">
             <text>名字</text>
             <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/image/PersonalCenter/next.png"></image>
-        </view>
-
+        </view></navigator>
         <view class="me-about">
             <text>性别</text>
             <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/image/PersonalCenter/next.png"></image>

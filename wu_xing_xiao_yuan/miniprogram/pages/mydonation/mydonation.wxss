@@ -95,10 +95,7 @@
   border-radius: 5px;
   cursor:pointer;
   color:#61666D;
-  
   background-color: white;
-  
- 
   box-shadow: 1rpx 1rpx #828292;
   position: relative;
   top: 5px;

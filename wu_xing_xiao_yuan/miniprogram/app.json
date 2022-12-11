@@ -14,6 +14,7 @@
     "pages/OrderForm/OrderForm",
     "pages/PersonalCenter/PersonalCenter",
     "pages/account/account",
+    "pages/update_info/update_info",
     "pages/myPublish/myPublish",
     "pages/myPurchaseOrder/myPurchaseOrder",
     "pages/myReplacementOrder/myReplacementOrder",

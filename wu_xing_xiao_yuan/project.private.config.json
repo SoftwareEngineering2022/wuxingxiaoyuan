@@ -70,7 +70,7 @@
       ]
     }
   },
-  "projectname": "%E7%BB%88%E6%9E%81",
+  "projectname": "%25E7%25BB%2588%25E6%259E%2581",
   "setting": {
     "compileHotReLoad": true
   }

@@ -1,0 +1,10 @@
+<!--pages/update_info/update_info.wxml-->
+<view class="me-about">
+    <text>名字</text>
+    <input class='create-title' placeholder="{{username}}" bindinput="updata"></input>
+
+    <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/image/PersonalCenter/next.png"></image>
+</view>
+<button class="btn" bindtap="submit_data" bindtap="submit_name">保存</button>
+
+
