@@ -6,8 +6,10 @@
       "list": [
         {
           "name": "db guide",
-          "pathName": "pages/databaseGuide/databaseGuide",
-          "query": ""
+          "pathName": "pages/HomePage/HomePage",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         },
         {
           "name": "",

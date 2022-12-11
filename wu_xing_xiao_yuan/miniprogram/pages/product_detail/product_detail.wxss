@@ -62,7 +62,7 @@
   height: 50px;
 }
 .userinfo-box{
-  width: 20%;
+  width: 60%;
   display: flex;
 }
 .userinfo-name{
