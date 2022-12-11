@@ -8,6 +8,10 @@
   </swiper>
 </view>
 <!-- 产品信息 -->
+<view class="userinfo">
+  <view class="userinfo-img"><image src="{{user_head}}" style="width:30px;height:30px;margin-left:10rpx;border-radius: 50%;"></image></view>
+  <view class="userinfo-name">{{user_name}}</view>
+  </view>
 <view class="product">
   <view class="product_1">
     <view>{{product_name}}:</view>
@@ -18,10 +22,7 @@
   </view>
   <view class="product_2" >{{product_detail}}</view>
   <view class="sub">TA的置换意向：{{product_sub}}</view>
-  <view class="userinfo">
-  <view class="userinfo-img"><image src="{{user_head}}" style="width:30px;height:30px;margin-left:10rpx;border-radius: 50%;"></image></view>
-  <view class="userinfo-name">{{user_name}}</view>
-  </view>
+  
 </view>
 <!-- 按钮模块 -->
 <view class="allbtn">

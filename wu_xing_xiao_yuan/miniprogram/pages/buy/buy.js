@@ -150,7 +150,7 @@ Page({
     })
     let old_data = that.data.product
     const db = wx.cloud.database()
-    db.collection('goodsList').skip(that.data.num)
+    db.collection('goods').skip(that.data.num)
       .get()
       .then(res => {
       // 利用concat函数连接新数据与旧数据

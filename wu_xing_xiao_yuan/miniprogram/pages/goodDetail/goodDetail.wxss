@@ -1,56 +1,75 @@
 /* pages/goodDetail/goodDetail.wxss */
-
-
-
-.pic{
-  height: 650rpx;
+.banner{
+  display: flex;
+  flex-direction: row;
+  align-self: center;
   width: 100%;
+  height: 700rpx;
 }
-.pic image{
-  height: 600rpx;
+.banner_1{
   width: 100%;
+  height: 700rpx;
+  overflow: hidden;
 }
 
-
-/*描述的文字格式*/
-.mainText{
+/* 产品信息 */
+.product{
   display: flex;
   flex-direction: column;
-  justify-content:space-around;
-  font-size: 30rpx;
+  width: 96%;
+  align-self: center;
+  margin-bottom: 20rpx;
 }
-.title{
-  font-weight: bold;
-  font-size: 45rpx;
-  padding-bottom: 10rpx;
-}
-.price{
-  color: rgb(253, 104, 84);
-  font-weight:900;
-  font-size: 70rpx;
-  align-content:right;
-}
-.describe{
+.product_1{
   display: flex;
-  font-size: 35rpx;
-
+  flex-direction: row;
+  width: 100%;
+  font-size: 25px;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  margin-left: 10rpx;
 }
-.range{
-  font-size:40rpx;
-  color: #828292;
+.product_2{
+  color:rgb(141, 141, 141);
+  display: flex;
+  font-size: 20px;
+  margin-left: 10rpx;
 }
-
-
-
-
+.sub{
+  color:rgb(141, 141, 141);
+  display: flex;
+  font-size: 15px;
+  margin-left: 10rpx;
+}
+.product_3{
+  color:white;
+  width:20%;
+  display: flex;
+  font-size: 15px;
+  margin-left: 10rpx;
+  border:1px solid #9fc0ec;
+  border-radius: 100rpx;
+  background-color: #9fc0ec;
+}
+.txt{
+  align-self: center;
+  margin-left: 20rpx;
+} 
+.userinfo{
+  display: flex;
+  margin-top: 10px;
+}
+.userinfo-name{
+  padding-top: 8px;
+  padding-left: 3px;
+  
+}
 /*三个蓝色图标的格式*/
 .allbtn{
   padding-top: 3rpx;
   display: flex;
   position: fixed;
   bottom: 0;
-  
-  
 }
 .btnItem{
   width: 100rpx;
