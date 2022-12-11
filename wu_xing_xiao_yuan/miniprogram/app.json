@@ -20,7 +20,8 @@
     "pages/concerning/concerning",
     "pages/donationdetail/donationdetail",
     "pages/upload/upload",
-    "pages/mydonation/mydonation"
+    "pages/mydonation/mydonation",
+    "pages/editPublish/editPublish"
   ],
   "window": {
     "backgroundTextStyle": "dark",

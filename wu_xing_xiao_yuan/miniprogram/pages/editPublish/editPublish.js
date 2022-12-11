@@ -1,5 +1,6 @@
 // pages/upload/upload.js
 const db=wx.cloud.database()
+
 Page({
 
   /**
@@ -8,38 +9,19 @@ Page({
   data: {
     fenlei:[],
     img:[],
+    id:"",
     showView: false,
     showView2: false,
-    openid:"",
-    userinfo:[],
+    goodsName:"",
+    category:"",
+    freshness:"",
+    tardingMethod:[],
+    substitutionIntent:"",
+    price:"",
+    info:"",
+    img:[]    
   },
   /*显示隐藏内容*/
-
-  getOpenid() {
-    wx.cloud.callFunction({
-     name: 'getOpenid',
-     complete: res => {
-      console.log('云函数获取到的openid: ', res)
-      var openid = res.result.openid;
-      this.setData({
-       openid: openid
-      });
-      db.collection('userInfo').aggregate()
-      .match({
-        _openid:this.data.openid
-      })
-      .end()
-      .then(res => {
-        console.log('个人信息获取成功', res)
-        this.setData({
-          userinfo:res.list[0],
-        })
-      })
-     }
-    })},
-
-
-
 
 
   /*上传图片 */
@@ -61,8 +43,7 @@ Page({
           success: function(res){
             console.log(res.fileID)
             that.setData({
-              img:that.data.img.concat(res.fileID),
-             
+              img:that.data.img.concat(res.fileID)
             })
           },
           fail: function(res){
@@ -95,37 +76,37 @@ Page({
       })
       console.log(that.data.img)
     },
-
-    submit:function(e){
+    update1:function(e){
       let that = this
       console.log(e)
       if(e.detail.value.goodsName!=""&&e.detail.value.fenlei!=""&&e.detail.value.tardingMethod!=""&&e.detail.value.info!=""&&that.data.img.length!==0){//不允许不上传图片
-        db.collection('goods').add({
+        db.collection('goods').doc(that.data.id).update({
           data:{
             goodsName:e.detail.value.goodsName,
             category:e.detail.value.fenlei,
             freshness:e.detail.value.freshness+'成新',
             tardingMethod:e.detail.value.tardingMethod,
             substitutionIntent:e.detail.value.substitutionIntent,
-            price:e.detail.value.price,
+            price:e.detail.value.price+'元',
             info:e.detail.value.info,
             src:that.data.img,
-            nickName:that.data.userinfo.nickName,
-            avatarUrl:that.data.userinfo.avatarUrl,
 						// update_time: timeutil.TimeCode(new Date()),
             upload_time:db.serverDate(),
+            // num:0
           },success:function(res){
-            wx.showToast({
-              title: '发布成功',
-            });
-            setTimeout(function() {
-          }, 1000)
-          wx.redirectTo({
-            url: '../myPublish/myPublish'
-          })
+           wx.showToast({
+               title: '发布成功',
+              success:function(res){
+                 setTimeout(function () {
+             wx.redirectTo({
+             url: '../myPublish/myPublish',
+             })
+            }, 1000)
           }
         })
-      }else{
+      }
+    })
+  }else{
         wx.showToast({
           title: '您还有未填写的信息',
           icon:"none"
@@ -137,17 +118,37 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad(options) {
-    this.getOpenid()
-    let that=this
+  onLoad:function(options) {
+    let that= this
+    that.setData({
+      id:options.id
+    })
     db.collection('fenlei').get({
       success:function(res){
         console.log('获取成功',res)
         that.setData({
-          fenlei:res.data,
+          fenlei:res.data
         })
       },fail:function(res){
         console.log('获取失败',res)
+      }
+    })
+    db.collection('goods').doc(options.id).get({
+      success:function (res) {
+        console.log('获取成功',res)
+        that.setData({
+          goodsName:res.data.goodsName,
+          category:res.data.category,
+          freshness:res.data.freshness,
+          tardingMethod:res.data.freshness,
+          substitutionIntent:res.data.substitutionIntent,
+          price:res.data.price,
+          info:res.data.info,
+          img:res.data.src
+        })
+      },
+      fail:function (res) {
+        console.log('信息获取失败',res)
       }
     })
     showView: (options.showView == "true" ? true : false)
@@ -196,13 +197,13 @@ Page({
    */
   onUnload() {
     
+
   },
 
   /**
-   * 页面相关事件处理函数--监听用户下拉动作
+   * 页面相关事件处理函数
    */
   onPullDownRefresh() {
-
   },
 
   /**
@@ -211,6 +212,7 @@ Page({
   onReachBottom() {
 
   },
+
 
   /**
    * 用户点击右上角分享
