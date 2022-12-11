@@ -15,6 +15,7 @@
   </view>
   <view class="donation_item_text">
     <text>旧衣回收: {{item.weight}}</text>
+    <text>回收日期：{{item.day}}</text>
     <text>回收时间：{{item.time}}</text>
     <text>福利发放：64个校园币，10颗爱心</text>
   </view>

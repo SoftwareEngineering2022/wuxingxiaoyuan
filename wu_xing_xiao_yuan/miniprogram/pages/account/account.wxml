@@ -1,18 +1,51 @@
 <!-- 接单数量、余额、头像、个人信息 -->
-<view class="title">
-
+<view class="userinfo">
+  <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/image/background-shine.jpeg" class="background"></image>
   <view wx:if="{{avatarUrl!=''}}">
-    <view class="img">
+    <view class="userinfo-img">
       <image src="{{avatarUrl}}"></image>
-      <view> {{nickName}}</view>
+      <view class="useinfo-name"> {{nickName}}</view>
     </view>
     <!--头像&昵称-->
     </view>
-
   </view>
-
-
   <view wx:if="{{avatarUrl==''}}" class="else">
     您尚未登录！
+  </view>
+
+  <view class="mypublish">
+    <view class="mypublish-content">
+        <view class="me-about">
+            <text >头像</text>
+            <image  src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/image/PersonalCenter/next.png"></image>
+        </view>
+
+        <view class="me-about">
+            <text>名字</text>
+            <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/image/PersonalCenter/next.png"></image>
+        </view>
+
+        <view class="me-about">
+            <text>性别</text>
+            <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/image/PersonalCenter/next.png"></image>
+        </view>
+
+        <view class="me-about">
+            <text>学校</text>
+            <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/image/PersonalCenter/next.png"></image>
+        </view>
+
+        <view class="me-about">
+            <text>地址</text>
+            <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/image/PersonalCenter/next.png"></image>
+        </view>
+
+        <view class="me-about">
+            <text>更多信息</text>
+            <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/image/PersonalCenter/next.png"></image>
+        </view>
+
+       
+    </view>  
   </view>
 

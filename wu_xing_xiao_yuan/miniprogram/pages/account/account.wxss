@@ -1,21 +1,65 @@
+.userinfo{
+  width: 100%;
+  height: 700px;
+}
+
+.background{
+  width: 100%;
+  height: 40%;
+}
 
 
-.title .else {
-  margin: 0 auto;
+
+.userinfo-img{
+  display: flex;
+  position: relative;
+  top: -160px;
+}
+
+
+.userinfo .else{
+  margin: 5px 3px 0px 10px;
   padding: 20rpx;
 }
-
-
-.title .img {
+.userinfo-img {
   padding: 10rpx;
-  text-align: center;
 }
-
-.title .img image {
+.userinfo-img image {
   width: 150rpx;
   height: 150rpx;
   border-radius: 15px;
 }
+.useinfo-name{
+  font-size: 20px;
+  margin:5px 0px 0px 3px;
+}
+
+
+.mypublish{
+  margin-top: 0rpx;
+  position: relative;
+  top: -470px;
+}
+.mypublish-content{
+  width: 95%; 
+  border-radius: 5%;
+  margin: auto;
+  background-color: rgb(253, 253, 253);
+  box-shadow: 5rpx 5rpx 10rpx 5rpx #e1e1e1;
+}
+.me-about{
+  display: flex;
+  margin: 20rpx 40rpx;
+  padding: 30rpx 0rpx;
+  justify-content: space-between;
+  border-bottom: 2rpx solid rgb(238, 238, 238);
+}
+.me-about image{
+  align-self: center;
+  width: 35rpx;
+  height: 35rpx;
+}
+
 
 
 
