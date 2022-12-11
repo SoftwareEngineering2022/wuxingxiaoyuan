@@ -1,5 +1,6 @@
 // pages/product_detail/product_detail.js
-const db = wx.cloud.database()
+const db = wx.cloud.database();
+
 Page({
 
   /**
@@ -33,7 +34,7 @@ Page({
             product_src:that.data.product_src[0],
             product_price:that.data.product_price,
             product_id:that.data.id,
-            product_checked:""    
+            product_checked:"",
             },
             success:function(res){
               console.log('商品加入购物车成功',res)
@@ -111,13 +112,14 @@ Page({
           product_detail:res.data.info,
           product_freshness:res.data.freshness,
           product_sub:res.data.substitutionIntent,
+          product_state:res.data.tardingMethod,
           user_head:res.data.avatarUrl,
           user_name:res.data.nickName,
           id:res.data._id 
         })
       },
       fail:function(res){
-        console.log('商品详细信息获取失败',res)
+        console.log('商品详细信息获取失败',res) 
       }
     })
   },

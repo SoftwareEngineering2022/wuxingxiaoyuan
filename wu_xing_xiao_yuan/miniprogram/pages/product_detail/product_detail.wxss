@@ -39,7 +39,7 @@
 .sub{
   color:rgb(141, 141, 141);
   display: flex;
-  font-size: 15px;
+  font-size: 18px;
   margin-left: 10rpx;
 }
 .product_3{
@@ -137,3 +137,16 @@
   position: fixed;
   height: 70rpx;
 }
+.btn4{
+  margin-bottom: 20rpx;
+  background-color: #ffe44a;
+  width: 100rpx;
+  height: 60rpx;
+  border-radius: 100rpx;
+  color:black;
+  box-shadow: 0rpx 0rpx #828292;
+  bottom: 0;
+  right:30px;
+  position: fixed;
+  height: 70rpx;
+} 
