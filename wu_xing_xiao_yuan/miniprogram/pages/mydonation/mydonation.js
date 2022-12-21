@@ -29,6 +29,9 @@ Page({
        lable: '全部',
        _openid:this.data.openid
       })
+      .sort({        //类似于orderBy
+        upload_time:-1,
+      })
 			.end()
 			.then(res => {
 				console.log('状态', res)

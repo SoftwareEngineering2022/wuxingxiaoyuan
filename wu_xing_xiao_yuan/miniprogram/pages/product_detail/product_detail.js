@@ -40,6 +40,8 @@ submit_order:function(){
           user_name:that.data.user_name,
           avatarUrl:that.data.user_head,
           order_time:db.serverDate(),
+          lable:["全部","待收货"],
+          freshness:that.data.product_freshness,
           },
           success:function(res){
             console.log('商品生成订单成功',res)

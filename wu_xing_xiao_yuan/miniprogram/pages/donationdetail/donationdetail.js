@@ -72,7 +72,8 @@ Page({
         time:this.data.selectArray[this.data.currenttime],
         address:this.data.addressArray[this.data.currentaddress],
         weight:this.data.weightArray[this.data.currentweight],
-        lable:['全部','待取件']
+        lable:['全部','待取件'],
+        upload_time:db.serverDate()
       }
     }).then(res=>{console.log(res)})
   },
@@ -91,6 +92,7 @@ Page({
     }),
 
     this.submitdata()
+   
 },
 
 
