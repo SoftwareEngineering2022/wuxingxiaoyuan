@@ -1,2 +1,62 @@
-<!--pages/myReplacementOrder/myReplacementOrder.wxml-->
-<text>pages/myReplacementOrder/myReplacementOrder.wxml</text>
+<!--pages/mydonation/mydonation.wxml-->
+<!-- 页面首部的导航栏效果 -->
+<scroll-view scroll-x class="navbar" scroll-with-animation scroll-left="{{scrollLeft}}rpx">
+  <view class="nav-item" wx:for="{{tabs}}" wx:key="id" bindtap="tabSelect" data-id="{{index}}">
+    <view class="nav-text {{index==tabCur?'tab-on':''}}">{{item}}</view>
+  </view>
+</scroll-view>
+
+<!--
+  <view wx:if="{{item.lable[1]=='待收货'}}">
+
+</view>
+
+
+<view wx:if="{{item.lable[1]=='已完成'}}">
+<view><button class="btn3" size="mini">立即评价</button></view>
+</view>
+</view>
+-->
+
+
+
+<!-- 页面底部的数据渲染 -->
+  <view class="order_container_box" >
+  
+  <view style="width: 500px;">
+  <view class="order_item_img">
+    <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/goods/1670723409.png"></image>
+
+    <view style="margin-left: 40px; font-size: medium; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >
+    ta的</view>
+  </view>
+  <view style="margin-top: -160rpx; margin-left: 96px;">
+    <text style="font-size: 20px;">翻天...</text>
+  <!-- 购买/购买+置换按钮模块 -->
+  </view>
+  <view class="cu-tag round bg-orange sm goods_btn" style="background-color:#9fc0ec;  height: 30px; margin-left: 96px;">10成新</view>
+  
+
+  <view style="color:#e2512c; font-size: 60px; margin-top: -100rpx; margin-left: 300rpx;">☞</view>
+
+</view>
+
+
+<view style="margin-left: 200px; margin-top: -110px;">
+  <view class="order_item_img">
+    <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/goods/1670745505.png"></image>
+    <view style="margin-left: 40px; font-size: medium; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >
+    wo的</view>
+  </view>
+  <view style="margin-top: -160rpx; margin-left: 96px;">
+    <text style="font-size: 20px;">小草莓</text>
+  <!-- 购买/购买+置换按钮模块 -->
+  </view>
+  <view class="cu-tag round bg-orange sm goods_btn" style="background-color:#9fc0ec;  height: 30px; margin-left: 96px;">10成新</view>
+
+</view>
+
+<view style="margin-left: 140px;"><button class="btn2" size="mini" bindtap="confirm">确认收货</button></view>
+<view ><button class="btn1" size="mini">立即评价</button></view>
+</view>
+

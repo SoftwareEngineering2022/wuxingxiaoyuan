@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    tabs: ['全部','待确认','已完成'],
+    tabCur: 0, //默认选中、
   },
 
   /**
@@ -14,6 +15,16 @@ Page({
   onLoad(options) {
 
   },
+
+  tabSelect(e) {
+    console.log(e)
+   this.setData({
+     tabCur: e.currentTarget.dataset.id,
+     scrollLeft: (e.currentTarget.dataset.id - 2) * 200
+   }, success => {
+    
+   })
+ },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
