@@ -1,0 +1,69 @@
+<!--pages/change_order/change_order.wxml-->
+<!-- 对方 -->
+<view class="change_good">
+<view class="product_list_context" >
+      <image src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/goods/1670723409.png" ></image>  
+      <view class="product_list_words">
+        <view class="name">翻天娃辣条</view> 
+        <view class="ownerinfo">
+<image class="ownerinfo-Url" src="https://thirdwx.qlogo.cn/mmopen/vi_32/DYAIOgq83erOpkF9XdnaWERHichGt6zhj6cRg026kuDv1OhUEAEbUnKuJI3uHaXyo1TWicNSy2CDfkzrMwEnjvbQ/132" style="width:40px;height:40px;margin-left:10rpx;border-radius: 50%;"></image>
+<view class="ownerinfo-name">月见阿秋</view>
+</view>       
+      </view>
+</view>
+<!-- 我的商品 -->
+<view class="myup">
+ 我已发布的商品：
+</view>
+
+<view class="product_list" >
+  <view class="product_list_1">
+    <!-- 选择框 负责传递商品id -->
+    <checkbox-group >
+      <checkbox></checkbox>
+    </checkbox-group>
+    <view class="product_list_2" >
+      <view class="pic"><image class="pic1" src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/goods/1670745505.png" style="border-radius: 20rpx;"></image>
+      </view>
+      <view class="product_list_3">
+        <view class="name">小草莓</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="product_list" >
+  <view class="product_list_1">
+    <!-- 选择框 负责传递商品id -->
+    <checkbox-group >
+      <checkbox></checkbox>
+    </checkbox-group>
+    <view class="product_list_2" >
+      <view class="pic"><image class="pic1" src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/goods/1670724912.png" style="border-radius: 20rpx;"></image>
+      </view>
+      <view class="product_list_3">
+        <view class="name">草莓熊联名礼盒唇泥系列</view>
+      </view>
+    </view>
+  </view>
+</view> 
+
+<view class="product_list" >
+  <view class="product_list_1">
+    <!-- 选择框 负责传递商品id -->
+    <checkbox-group >
+      <checkbox></checkbox>
+    </checkbox-group>
+    <view class="product_list_2" >
+      <view class="pic"><image class="pic1" src="cloud://cloud1-9gaunl0x483e6245.636c-cloud1-9gaunl0x483e6245-1314550294/goods/1671587959.png" style="border-radius: 20rpx;"></image>
+      </view>
+      <view class="product_list_3">
+        <view class="name">佳能CDD相机</view>
+      </view>
+    </view>
+  </view>
+</view> 
+
+<view class="anniu">
+ <button class="del" bindtap="change_to" size="large"  >确认下单</button>
+</view>
+</view>

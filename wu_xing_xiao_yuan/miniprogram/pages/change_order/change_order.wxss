@@ -1,0 +1,119 @@
+/* pages/change_order/change_order.wxss */
+.change_good{
+  width: 100%;
+  margin-top: 5px;
+}
+
+.ownerinfo{
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+  margin-left: 100px;
+}
+.ownerinfo-name{ 
+  margin: 20px 0px 0px 10px ;
+  font-size: 15px;
+}
+.product_list_context{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 10%;
+  height: 150px;
+  padding-top: 20px;
+  padding-left: 15px;
+}
+.product_list_context > image{
+  margin-left: 10px;
+  width:250rpx;
+  height:220rpx;
+  border-radius: 20rpx;
+}
+
+.myup{
+  text-align: center;
+  font-size: 25px;
+}
+.product_list_words{
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+ 
+}
+.name{
+  font-size:25px;
+  margin: 5px 0px 0px 25px ;
+}
+
+.line{
+  width: 100%;
+  height: 5rpx;
+  background-color: rgb(136, 135, 135);
+  margin-bottom: 10rpx;
+}
+
+.product_list{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 300rpx;
+  align-self: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5px;
+  background-color:gainsboro;
+  border-radius: 5%;
+}
+.product_list_1{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20rpx;
+}
+.product_list_2{
+  display: flex;
+  flex-direction: row;
+  margin-left: 20rpx;
+}
+.product_list_3{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+}
+.name{
+  width: 80%;
+  text-overflow: ellipsis;
+  overflow:hidden;
+  white-space:nowrap;
+  font-size:20px;
+  display:webkit-box;
+}
+
+.pic{
+  width:250rpx;
+  height:250rpx;
+  border-radius: 20rpx;
+}
+.pic1{
+  width: 100%;
+  height:100%;
+  border-radius: 20rpx;
+}
+/* 按钮模块样式 */
+.anniu{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 0;
+  justify-content: space-between;
+  width: 100%;
+  height: 100rpx;
+  background-color: white;
+  align-items: center;
+} 
+
+.del{
+  margin-right: 20rpx;
+  background-color: rgb(235, 192, 151);
+}

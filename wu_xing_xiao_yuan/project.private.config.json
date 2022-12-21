@@ -69,6 +69,13 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/change_order/change_order",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }

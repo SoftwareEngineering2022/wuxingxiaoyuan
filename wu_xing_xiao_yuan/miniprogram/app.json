@@ -24,7 +24,8 @@
     "pages/mydonation/mydonation",
     "pages/chat/chat",
     "pages/messagedetail/messagedetail",
-    "pages/editPublish/editPublish"
+    "pages/editPublish/editPublish",
+    "pages/change_order/change_order"
   ],
   "window": {
     "backgroundTextStyle": "dark",
