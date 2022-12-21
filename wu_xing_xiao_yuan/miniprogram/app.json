@@ -23,6 +23,7 @@
     "pages/upload/upload",
     "pages/mydonation/mydonation",
     "pages/chat/chat",
+    "pages/messagedetail/messagedetail",
     "pages/editPublish/editPublish"
   ],
   "window": {
