@@ -94,7 +94,7 @@
   background-color: #F0AB45;
   box-shadow: 1rpx 1rpx #828292;
   position: relative;
-  top: 15px;
+  top: 6px;
   left: 62px;
 }
 .btn2{
@@ -110,7 +110,7 @@
   background-color:#87C38F;
   box-shadow: 1rpx 1rpx #828292;
   position: relative;
-  top: -18px;
+  top: -27px;
   left: 160px;
 }
 .btn3{
@@ -126,7 +126,7 @@
   background-color:#87C38F;
   box-shadow: 1rpx 1rpx #828292;
   position: relative;
-  top: 10px;
+  top: 0px;
   left: 160px;
 
 }

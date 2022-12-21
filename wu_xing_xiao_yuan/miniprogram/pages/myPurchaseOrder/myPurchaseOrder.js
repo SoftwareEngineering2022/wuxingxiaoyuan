@@ -126,10 +126,10 @@ get_finished_data(){
         }
       })
         .then(res => {
-          console.log('成功保存', res)
+          console.log('确认收货', res)
           wx.showModal({
             title: '温馨提示',
-            content: '保存成功',
+            content: '确认收货',
             success(res) {},
             fail(res){},
             showCancel:false,
