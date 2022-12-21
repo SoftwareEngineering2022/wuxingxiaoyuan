@@ -48,7 +48,7 @@ changeto(){
     let that = this
     db.collection('order').aggregate()
     .match({
-      //_openid:this.data.openid
+      _openid:this.data.openid
     })
     .sort({        //类似于orderBy
       order_time: -1,

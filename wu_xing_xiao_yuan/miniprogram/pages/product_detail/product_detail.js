@@ -67,45 +67,45 @@ submit_order:function(){
   })
 },
 
-   // 加入购物车
-   into_shopping_cart:function(){
-    let that = this
-    db.collection('collection').where({
-      product_id: that.data.id
-    }).get({
-      success:function(res){
-        console.log(res)
-        if(res.data == ""){
-          db.collection('collection').add({
-            data:{
-            product_name:that.data.product_name,
-            product_src:that.data.product_src[0],
-            product_price:that.data.product_price,
-            product_id:that.data.id,
-            product_checked:"",
-            },
-            success:function(res){
-              console.log('商品加入购物车成功',res)
-              wx.showToast({
-                title: '加入成功',
-              })
-            },
-            fail:function(res){
-              console.log('商品加入购物车失败',res)
-            }
-          })
-        }else{
-          wx.showToast({
-            title: '已有这个商品',
-            icon:'none'
-          })
-        }
-      },
-      fail:function(res){
-        console.log(res)
-      }
-    })
-  },
+  //  // 加入购物车
+  //  into_shopping_cart:function(){
+  //   let that = this
+  //   db.collection('collection').where({
+  //     product_id: that.data.id
+  //   }).get({
+  //     success:function(res){
+  //       console.log(res)
+  //       if(res.data == ""){
+  //         db.collection('collection').add({
+  //           data:{
+  //           product_name:that.data.product_name,
+  //           product_src:that.data.product_src[0],
+  //           product_price:that.data.product_price,
+  //           product_id:that.data.id,
+  //           product_checked:"",
+  //           },
+  //           success:function(res){
+  //             console.log('商品加入购物车成功',res)
+  //             wx.showToast({
+  //               title: '加入成功',
+  //             })
+  //           },
+  //           fail:function(res){
+  //             console.log('商品加入购物车失败',res)
+  //           }
+  //         })
+  //       }else{
+  //         wx.showToast({
+  //           title: '已有这个商品',
+  //           icon:'none'
+  //         })
+  //       }
+  //     },
+  //     fail:function(res){
+  //       console.log(res)
+  //     }
+  //   })
+  // },
   // 加入收藏夹
   buy:function(){
     let that = this

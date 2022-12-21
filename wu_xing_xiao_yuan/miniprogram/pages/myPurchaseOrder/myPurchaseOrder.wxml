@@ -19,7 +19,7 @@
     <view class="cu-tag round bg-orange sm goods_btn" style="background-color:#9fc0ec;  height: 30px;">{{item.freshness}}成新</view>
   <!-- 购买/购买+置换按钮模块 -->
 <view wx:if="{{item.lable[1]=='待收货'}}">
-<view><button class="btn1" size="mini">确认收货</button></view>
+<view><button class="btn1" size="mini" bindtap="confirm">确认收货</button></view>
 <view><button class="btn2" size="mini">立即评价</button></view>
 </view>
 <!-- 置换按钮模块 -->
