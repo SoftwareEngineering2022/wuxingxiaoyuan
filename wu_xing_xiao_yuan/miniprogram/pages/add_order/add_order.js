@@ -33,9 +33,14 @@ pay:function(e){
   })
 },
 changeto(){
-  wx.navigateTo({
-    url: '../myPurchaseOrder/myPurchaseOrder',
-  })
+  db.collection('goods').doc(this.data.goods.product_id)
+   .remove()
+   .then(res => {
+       console.log('购买成功', res)
+       wx.navigateTo({
+         url: '../myPurchaseOrder/myPurchaseOrder',
+       })
+       })
 },
 
 
