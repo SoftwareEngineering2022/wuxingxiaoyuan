@@ -139,6 +139,28 @@ submit_order:function(){
       }
     })
   },
+  //和他聊聊
+intochat: function (event) {
+  wx.setStorageSync('userid', this.data.user_id)
+  wx.setStorageSync('username', this.data.user_name)
+  wx.setStorageSync('userhead', this.data.user_head)
+  //let that = this
+        db.collection('chat_record1').add({
+          data:{
+            userid:this.data.user_id,
+            username:this.data.user_name,
+            userhead:this.data.user_head,
+            chat_time:db.serverDate(),
+            //chat1_time:this._formatTime(chat_time),
+          },success:function(res){
+            console.log('获取成功')
+          wx.navigateTo({
+            url: '/pages/chat/chat',
+          })
+          }
+        })
+ 
+},
   /**
    * 生命周期函数--监听页面加载
    */

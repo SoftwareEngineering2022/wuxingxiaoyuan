@@ -1,1 +1,86 @@
 /* pages/message/message.wxss */
+.box{
+  width: 100%;
+  margin: 0 auto;
+  border-bottom:2rpx solid	#D3D3D3;
+  display: flex;
+  flex-direction: row;
+  padding: 25rpx 25rpx;
+}
+.box1{
+  width: 580rpx;
+  overflow: hidden;
+  position: relative;
+}
+.box1 .time{
+  color: #B0B0B0;
+  position: absolute;
+  right: 0rpx;
+  line-height: 60rpx;
+  font-size: 26rpx;
+}
+.box .tx{
+  position: relative;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 5%;
+  background-color: #DADFDE;
+  margin-right: 20rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+.box:nth-of-type(2n){
+  background-color: rgba(237,237,237, .6);
+}
+.box .tx .img-1{
+  width: 100%;
+  height: 100%;
+}
+.box .tx image{
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 5%;
+}
+.box .tx .tx-dot{
+  width: 35rpx;
+  height: 35rpx;
+  border-radius: 50%;
+  background-color: #ff0000;
+  position: absolute;
+  right: -10rpx;
+  top: -10rpx;
+  text-align: center;
+  color: white;
+  font-size: 18rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  
+}
+.box .tx .tx-dot .tx-dot-99{
+  font-size: 15rpx;
+}
+.box .text1{
+  display: block;
+  color: black;
+  font-weight: bold;
+  font-size: 26rpx;
+  line-height: 60rpx;
+  width: 300rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.box .text2{
+  display: block;
+  color: #B0B0B0;
+  font-size: 30rpx;
+  width: 300rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

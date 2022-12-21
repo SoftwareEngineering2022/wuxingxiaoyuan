@@ -1,2 +1,16 @@
-<!--pages/message/message.wxml-->
-<text>pages/message/message.wxml</text>
+<view class="box" style="{{bdcolor}}" wx:for="{{chat_message}}" wx:key="_id" bindtap="toEdit" data-bid="{{item.userid}}" data-head="{{item.userhead}}" data-name="{{item.username}}">
+<view class="select_calculator" ></view>
+  <view class="tx"> 
+    <block>
+      <image src="{{item.userhead}}" class="img-1"/>
+    </block>
+  </view>
+  <view class="box1">
+    <!-- <text class="time">{{item.chat_time}}</text> -->
+     <text class="text1">{{item.username}}</text>
+    <text class="text2">你好！</text>
+  </view>
+</view>
+
+
+
