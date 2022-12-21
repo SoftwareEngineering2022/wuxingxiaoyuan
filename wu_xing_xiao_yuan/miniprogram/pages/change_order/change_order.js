@@ -13,6 +13,9 @@ Page({
     wx.showToast({
       title: '置换成功',
     })
+    wx.navigateTo({
+      url: '../myReplacementOrder/myReplacementOrder'
+    })
   },
   /**
    * 生命周期函数--监听页面加载
