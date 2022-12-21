@@ -13,6 +13,7 @@ Page({
 pay:function(e){
   let that = this
   db.collection('order')
+  .aggregate()
   .get({
     success:function(res){
       console.log('获取商品成功',res)
@@ -43,18 +44,35 @@ changeto(){
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+    var  name = wx.getStorageSync('name')
     let that = this
-    db.collection('order').get({
-      success:function(res){
-        console.log('获取订单商品成功',res)
-        that.setData({
-          goods:res.data[0],
-        })
-      },
-      fail:function(res){
-        console.log('获取订单商品失败',res)
-      }
+    db.collection('order').aggregate()
+    .match({
+      //_openid:this.data.openid
     })
+    .sort({        //类似于orderBy
+      order_time: -1,
+    })
+    .end()
+    .then(res => {
+      console.log('状态', res)
+      this.setData({
+        goods: res.list[0],
+      })
+    })
+
+    // .get({
+    //   success:function(res){
+    //     console.log('获取订单商品成功',res)
+    //     that.setData({
+    //       goods:res.data[0],
+    //       upload_time:db.serverDate(),
+    //     })
+    //   },
+    //   fail:function(res){
+    //     console.log('获取订单商品失败',res)
+    //   }
+    // })
   },
 
 

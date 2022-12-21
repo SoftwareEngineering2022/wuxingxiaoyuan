@@ -38,12 +38,15 @@ submit_order:function(){
           product_price:that.data.product_price,
           product_id:that.data.id,
           user_name:that.data.user_name,
-          avatarUrl:that.data.user_head
+          avatarUrl:that.data.user_head,
+          order_time:db.serverDate(),
           },
           success:function(res){
             console.log('商品生成订单成功',res)
+            wx.getStorageSync('name',goods.product_name)
             wx.navigateTo({
-              url: '../add_order/add_order',
+              //
+              url: '../add_order/add_orders',
             })
           },
           fail:function(res){
@@ -101,7 +104,7 @@ submit_order:function(){
       }
     })
   },
-  // 立即购买
+  // 加入收藏夹
   buy:function(){
     let that = this
     db.collection('collection').where({
