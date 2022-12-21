@@ -19,13 +19,13 @@ Page({
   search:function(e){
     let key = e.detail.value
     let that = this
-    if(that.data.search == ""){
-      wx.showToast({
-        title: '未找到商品',
-        icon:"none"
-      })
-    }
-    else({})
+    // if(that.data.search == ""){
+    //   wx.showToast({
+    //     title: '未找到商品',
+    //     icon:"none"
+    //   })
+    // }
+    // else({})
     db.collection('goods').where({
       goodsName:db.RegExp({
         regexp: '.*' + key,
